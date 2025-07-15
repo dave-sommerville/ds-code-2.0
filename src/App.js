@@ -1,4 +1,5 @@
 import './css/index.css';
+import './css/utils.css';
 import HeroBanner from './Components/PageWide/HeroBanner';
 import FloatingHeader from './Components/PageWide/FloatingHeader';
 import Footer from './Components/PageWide/Footer';

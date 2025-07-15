@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
-import '../../css/index.css';
-
+import '../../css/hero-banner.css';
+import '../../css/utils.css';
+import honeyComb from '../../media/img/honeycomb.svg';
 const parallaxLayers = [
   { className: 'large-orange-hex', speed: 0.4 },
   { className: 'med-orange-hex-one', speed: 0.6 },
@@ -39,7 +40,7 @@ function HeroBanner(){
 
   return (
     <header id="page-top" className="f-col">
-      <img src="./src/img/honeycomb.svg" className="hero-banner" alt="hero background" />
+      <img src={honeyComb} className="hero-banner" alt="hero background" />
       <h1 className="z100">
         <span>D</span>AVE <span>S</span>OMMERVILLE
       </h1>

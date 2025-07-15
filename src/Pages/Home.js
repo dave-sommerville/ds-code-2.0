@@ -3,7 +3,7 @@ import SplashPageFeature from "../Components/Other/SplashPageFeature";
 function Home() {
   return(
     <>
-      <SplashPageFeature/>
+      {/* <SplashPageFeature/> */}
     </>
   );
 }
