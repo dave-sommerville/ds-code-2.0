@@ -21,4 +21,4 @@ function HangManData() {
   return hangmanPhrases[Math.floor(Math.random() * hangmanPhrases.length)];
   }
 }
-export default HangManData;
+export default HangManData; 
