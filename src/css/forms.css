@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+.poll-social {
+  border: #fff 3px solid;
+  border-radius: var(--app-border-rad);
+  background-color: var(--clr-drk);
+  justify-content: center;
+  padding: var(--app-spacing) 0;
+  align-items: center;
+  form {
+    background-color: var(--clr-light-bg);
+    border-radius: var(--app-border-rad);
+  }
+  span {
+    text-decoration: line-through;
+    filter: opacity(0.7);
+    margin-right: -7px;
+  }
+  h4 {
+    margin-bottom: var(--app-spacing)
+  }
+  button{
+    margin-left: var(--app-spacing);
+  }
+}
+
+.poll-option {
+  display: block;
+  height: 30px;
+  font-size: var(--app-font-size);
+  text-align: center;
+  border: 1px solid #ccc;
+  transition: var(--app-transition);
+}
+
+.poll-option input[type="radio"] {
+  display: none;
+}
+
+.poll-option input[type="radio"]:checked + label,
+.poll-option:has(input[type="radio"]:checked) {
+  background: var(--clr-primary);
+  color: var(--clr-drk);
+}
+/*----------------------------------------------------------->
+	Contact Section
+<------------------------------------------------------------*/
+.contact {
+  width: 100%;
+  align-items: center;
+}
+.message {
+  margin-bottom: 50px;
+  margin-top: -25px;
+  width: min(100% - 10svw, 750px);
+  h5 {
+    font-size: var(--app-font-size);
+    font-weight: 600;
+    text-align: center;
+    margin: var(--app-spacing) 0;
+  }
+  input, textarea {
+    width: 100%;
+    border-radius: var(--app-border-rad);
+    background-color: var(--clr-light-blue);
+  }
+  textarea {
+    min-height: 30svh;
+    resize: none;
+  }
+  a {
+  font-size: 2.8rem;
+  }
+}

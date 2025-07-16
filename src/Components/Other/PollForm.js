@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../../css/forms.css';
 function PollForm() {
   return (
     <form name="poll" method="POST" data-netlify="true" className="poll-social">

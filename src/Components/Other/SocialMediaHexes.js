@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaMastodon, FaLinkedin, FaGithub } from 'react-icons/fa6';
+import '../../css/social-media-hexes.css';
 
 function SocialMediaHexes() {
   return (

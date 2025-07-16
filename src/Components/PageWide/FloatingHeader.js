@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
-import '../../css/index.css';
+import { NavLink, useLocation } from 'react-router-dom'
+import '../../css/floating-header.css';
 
 function FloatingHeader() {
   const navRef = useRef(null);
