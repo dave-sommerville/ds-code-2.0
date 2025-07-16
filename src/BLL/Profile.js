@@ -1,4 +1,3 @@
-function Profile(){
   class Link {
     #linkName = '';
     #linkUrl = '';
@@ -24,13 +23,16 @@ function Profile(){
   const LinkedIn = new Link("LinkedIn","");
   const youTube = new Link("YouTube","");
 
-  const ProfileObject = {
+  export const ProfileObject = {
     profileImgUrl: '',
+    imgNameOne: '',
     paragraphOne: '',
     paragraphTwo: '',
     paragraphThree: '',
     articleTwoImgUrl: '',
+    imgNameTwo: '',
     articleThreeImgUrl: '',
+    imgNameThree: '',
     links: [
       gitProfile,
       gitRepos,
@@ -38,5 +40,3 @@ function Profile(){
       youTube
     ]
   }
-}
-export default Profile;

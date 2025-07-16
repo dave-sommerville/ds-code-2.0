@@ -1,9 +1,10 @@
-import SplashPageFeature from "../Components/Other/SplashPageFeature";
+import SplashPageFeature from "../Components/Other/SplashPageFeature.js";
 
 function Home() {
   return(
     <>
-      {/* <SplashPageFeature/> */}
+      {/* LinkedIn reviews/courses, languages/tech stack*/}
+      <SplashPageFeature/>
     </>
   );
 }

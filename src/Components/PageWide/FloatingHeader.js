@@ -45,13 +45,23 @@ function FloatingHeader() {
               </NavLink>
             </li>
             <li>
+              <NavLink to="/about" className={({ isActive }) => isActive ? 'active' : ''}>
+                Story
+              </NavLink>
+            </li>
+            <li>
               <NavLink to="/portfolio" className={({ isActive }) => isActive ? 'active' : ''}>
-                Portfolio
+                Work
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/playground" className={({ isActive }) => isActive ? 'active' : ''}>
+                Play
               </NavLink>
             </li>
             <li>
               <NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''}>
-                Say Hi
+                Contact
               </NavLink>
             </li>
           </ul>

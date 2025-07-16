@@ -1,46 +1,36 @@
 import React, { useEffect, useState } from 'react';
 import { FaArrowRight, FaArrowLeft, FaArrowUpRightFromSquare } from 'react-icons/fa6';
-import './PortfolioFramework.css'; // optional for styling
+import '../../css/portfolio.css';
 
-
-function PortfolioFramework({portfolioItems}) {
+function PortfolioFramework({ items }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [imageLoaded, setImageLoaded] = useState(false);
 
-  const currentItem = portfolioItems[currentIndex];
-
-  // Preload all images once
   useEffect(() => {
-    const preloadContainer = document.createElement('div');
-    preloadContainer.style.display = 'none';
-    document.body.appendChild(preloadContainer);
+    if (!items || !items.length) return;
 
-    portfolioItems.forEach((item) => {
-      const img = new Image();
-      img.src = item.imgUrl;
-      preloadContainer.appendChild(img);
-    });
-
-    return () => document.body.removeChild(preloadContainer);
-  }, []);
-
-  useEffect(() => {
     setImageLoaded(false);
     const img = new Image();
-    img.src = currentItem.imgUrl;
+    img.src = items[currentIndex].imgUrl;
     img.onload = () => setImageLoaded(true);
-  }, [currentIndex]);
+  }, [items, currentIndex]);
 
   const adjustIndex = (operator) => {
     setCurrentIndex((prevIndex) => {
       if (operator === '+') {
-        return (prevIndex + 1) % portfolioItems.length;
+        return (prevIndex + 1) % items.length;
       } else if (operator === '-') {
-        return (prevIndex - 1 + portfolioItems.length) % portfolioItems.length;
+        return (prevIndex - 1 + items.length) % items.length;
       }
       return prevIndex;
     });
   };
+
+  if (!items || !items.length) {
+    return <p>No portfolio items to display.</p>;
+  }
+
+  const currentItem = items[currentIndex];
 
   return (
     <div className="portfolio-framework">

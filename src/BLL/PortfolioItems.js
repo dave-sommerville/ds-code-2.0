@@ -1,5 +1,3 @@
-
-function PortfolioItems() {
   class Portfolio {
     #imgUrl ='';
     #title = '';
@@ -120,7 +118,7 @@ function PortfolioItems() {
     ["featured","games"]
   );
 
-  const portfolioItems = [
+  export const portfolioArray = [
     blackjack,
     scriptScavengers,
     codeBreaker,
@@ -131,5 +129,3 @@ function PortfolioItems() {
     cactusTheatre
   ];
 
-}
-export default PortfolioItems;
