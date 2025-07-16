@@ -1,29 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { hangingMan, getRandomPhrase } from './HangManData.js';
+import DraggablePopup from './DraggablePopup';
 import { FaXmark } from 'react-icons/fa6';
 import './Hangman.css';
-
-const hangingMan = [
-  `++---+\n||\u00A0\u00A0\u00A0\n||\u00A0\u00A0\u00A0\n||\u00A0\u00A0\u00A0\n||______`,
-  `++---+\n||\u00A0\u00A0\u00A0O\n||\u00A0\u00A0\u00A0\n||\u00A0\u00A0\u00A0\n||______`,
-  `++---+\n||\u00A0\u00A0\u00A0O\n||\u00A0\u00A0\u00A0|\n||\u00A0\u00A0\u00A0\n||______`,
-  `++---+\n||\u00A0\u00A0\u00A0O\n||\u00A0\u00A0/|\n||\u00A0\u00A0\u00A0\n||______`,
-  `++---+\n||\u00A0\u00A0\u00A0O\n||\u00A0\u00A0/|\\\n||\u00A0\u00A0\u00A0\n||______`,
-  `++---+\n||\u00A0\u00A0\u00A0O\n||\u00A0\u00A0/|\\\n||\u00A0\u00A0/ \n||______`,
-  `++---+\n||\u00A0\u00A0\u00A0O\n||\u00A0\u00A0/|\\\n||\u00A0\u00A0/ \\\n||______`
-];
-
-const hangmanPhrases = [
-  'Quick brown fox', 'Jump over the fence', 'Life is a journey',
-  'Home sweet home', 'Time heals all wounds', 'Better late than never',
-  'Lost in the moment', 'Sky full of stars', 'Catch me if you can',
-  'Dreams come true', 'Keep it simple', 'Live and let live',
-  'Under the weather', 'Break the silence', 'Chasing the wind',
-  'Eyes on the prize'
-];
-
-function getRandomPhrase() {
-  return hangmanPhrases[Math.floor(Math.random() * hangmanPhrases.length)];
-}
 
 function HangManPopup({ isVisible, onClose }) {
   const [gameRunning, setGameRunning] = useState(false);
@@ -33,8 +12,6 @@ function HangManPopup({ isVisible, onClose }) {
   const [gallows, setGallows] = useState(hangingMan[6]);
   const [message, setMessage] = useState('HANGMAN');
   const inputRef = useRef(null);
-  const popupRef = useRef(null);
-  const dragBarRef = useRef(null);
 
   useEffect(() => {
     if (!isVisible) return;
@@ -94,49 +71,11 @@ function HangManPopup({ isVisible, onClose }) {
     }
   };
 
-  // Drag behavior
-  useEffect(() => {
-    const popup = popupRef.current;
-    const drag = dragBarRef.current;
-    let isDragging = false;
-    let offsetX = 0;
-    let offsetY = 0;
-
-    const onMouseDown = (e) => {
-      isDragging = true;
-      offsetX = e.clientX - popup.offsetLeft;
-      offsetY = e.clientY - popup.offsetTop;
-    };
-    const onMouseMove = (e) => {
-      if (!isDragging) return;
-      popup.style.left = `${e.clientX - offsetX}px`;
-      popup.style.top = `${e.clientY - offsetY}px`;
-    };
-    const onMouseUp = () => (isDragging = false);
-
-    drag.addEventListener('mousedown', onMouseDown);
-    window.addEventListener('mousemove', onMouseMove);
-    window.addEventListener('mouseup', onMouseUp);
-
-    return () => {
-      drag.removeEventListener('mousedown', onMouseDown);
-      window.removeEventListener('mousemove', onMouseMove);
-      window.removeEventListener('mouseup', onMouseUp);
-    };
-  }, []);
-
   if (!isVisible) return null;
 
   return (
-    <div className="pop-out" ref={popupRef}>
+    <DraggablePopup onClose={onClose}>
       <div className="hangman-display f-col">
-        <div className="top-bar flex">
-          <div className="drag-bar" ref={dragBarRef}></div>
-          <div className="exit-game pointer" onClick={onClose}>
-            <FaXmark />
-          </div>
-        </div>
-
         <div className="game-wrapper f-col">
           <p className={`game-title ${gameRunning ? '' : 'big-font'}`}>{message}</p>
           <p className="word-display">{display.join('')}</p>
@@ -159,7 +98,8 @@ function HangManPopup({ isVisible, onClose }) {
           </button>
         </div>
       </div>
-    </div>
+    </DraggablePopup>
   );
 }
+
 export default HangManPopup;
