@@ -2,29 +2,28 @@ import React, { useEffect, useRef, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom'
 import '../../css/floating-header.css';
 
-function FloatingHeader() {
+function FloatingHeader({ showImmediately = false }) {
   const navRef = useRef(null);
   const headerRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(showImmediately);
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
+    if (showImmediately) {
+      setIsVisible(true);
+      return;
+    }
+
     const handleScroll = () => {
       const headerHeight = headerRef.current?.offsetHeight || 0;
       const scrollY = window.scrollY;
-
       setIsVisible(scrollY > headerHeight);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  useEffect(() => {
-    // Close mobile menu when navigating
-    setMenuOpen(false);
-  }, [location.pathname]);
+  }, [showImmediately]);
 
   return (
     <>

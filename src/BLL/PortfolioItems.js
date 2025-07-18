@@ -15,6 +15,7 @@
       - Full Stack
       - Console Apps
       - Freelance
+      - Assignment
     */
     constructor(img, title, desc, link, category) {
       this.imgUrl = img;
