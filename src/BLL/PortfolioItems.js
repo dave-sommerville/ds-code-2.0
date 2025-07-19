@@ -5,17 +5,7 @@
     #linkUrl = '';
     #category = [];
     /*
-    Portfolio Object
-    - Categories
-      - All
-      - Featured
-      - Games
-      - ECommerce & Organization
-      - Social Media
-      - Full Stack
-      - Console Apps
-      - Freelance
-      - Assignment
+
     */
     constructor(img, title, desc, link, category) {
       this.imgUrl = img;
@@ -56,15 +46,15 @@
     }
   }
   const blackjack = new Portfolio(
-    "./src/img/blackjack-dave-sommerville-github.jpg", 
+    "https://dave-sommerville.github.io/ds-code-releases/img/blackjack-preview-start.jpg", // https://dave-sommerville.github.io/ds-code-releases/img/blackjack-preview-play.jpg
     "Blackjack", 
     "My online version of Blackjack, featuring deal animations and a persistant player bank.", 
     "https://dave-sommerville.github.io/blackjack/",
-    ["featured","games"]
+    ["featured","games", "large-scale"]
   );
 
   const scriptScavengers = new Portfolio(
-    "./src/img/script-scavengers-dave-sommerville-github.jpg", 
+    "https://dave-sommerville.github.io/ds-code-releases/img/script-scavengers-preview-start.jpg", // https://dave-sommerville.github.io/ds-code-releases/img/script-scavengers-preview-play.jpg
     "Script Scavengers", 
     "Fast typing game with a desert scavenger theme. Including a highscore list.", 
     "https://dave-sommerville.github.io/script-scavengers/",
@@ -72,52 +62,109 @@
   );
 
   const codeBreaker = new Portfolio(
-    "./src/img/code-breaker-dave-sommerville-github.jpg",
+    "https://dave-sommerville.github.io/ds-code-releases/img/code-breaker-preview.jpg",
     "Code Breaker",
     "Based on the game Mastermind, players can test their logical deducation skills and track their times.", 
     "https://dave-sommerville.github.io/code-breaker/",
-    ["featured","games"]
+    ["games"]
   );
 
   const booogle = new Portfolio(
-    "./src/img/boogle-dave-sommerville-github.jpg",
+    "https://dave-sommerville.github.io/ds-code-releases/img/boogle-preview.jpg",
     "Booogle", 
     "A handy online Boggle display for large groups or travelling."
     + "Letter probabilities reflect the physical version.", 
     "https://dave-sommerville.github.io/boogle/",
-    ["featured","games"]
+    ["games"]
   );
 
   const meMyself = new Portfolio(
-    "./src/img/me-myself-and-eye-dave-sommerville-github.jpg", 
+    "https://dave-sommerville.github.io/ds-code-releases/img/me-myself-and-eye-preview.jpg", 
     "Me, Myself, and Eye", 
     "A solipistic social media site where who you are is up to you.", 
     "https://dave-sommerville.github.io/social-media-app/",
-    ["featured","games"]
+    ["social media","games"]
   );
 
   const opalOnyx = new Portfolio(
-    "./src/img/opal-and-onyx-dave-sommerville-github.jpg",
+    "https://dave-sommerville.github.io/ds-code-releases/img/Opal-and-Onyx-preview.jpg",
     "Opal & Onyx",
     "Collaboration project exploring luxury ecommerce design.",
     "https://dave-sommerville.github.io/opal-and-onyx/",
-    ["featured","games"]
+    ["featured","games", "ecommerce and organization"]
   );
 
   const hiveMind = new Portfolio(
-    "./src/img/hivemind-dave-sommerville-github.jpg", 
+    "https://dave-sommerville.github.io/ds-code-releases/img/hivemind-preview.jpg", 
     "HiveMind", 
     "Collaboration project creating our own version of a social media site.", 
     "https://dave-sommerville.github.io/hivemind/",
     ["featured","games"]
   );
   const cactusTheatre = new Portfolio(
-    "./src/img/cactus-theatre-dave-sommerville-github.jpg", 
+    "https://dave-sommerville.github.io/ds-code-releases/img/cactus-preview.jpg", 
     "Cactus Theatre Co", 
     "Promotional website for Winnipeg Fringe Festival", 
     "https://cactus-theatre-co.ca",
     ["featured","games"]
   );
+  const cedarU = new Portfolio(
+    "https://dave-sommerville.github.io/ds-code-releases/img/cedar-university-preview.jpg", 
+    "", 
+    "", 
+    "https://dave-sommerville.github.io/cedar-university-2024/",
+    ["",""]
+  );
+  const switches = new Portfolio(
+    "https://dave-sommerville.github.io/ds-code-releases/img/switches-and-styles-preview.jpg", 
+    "", 
+    "", 
+    "https://dave-sommerville.github.io/switches-and-styles/",
+    ["",""]
+  );
+  const hauntedHouse = new Portfolio(
+    "https://dave-sommerville.github.io/ds-code-releases/img/console-app-preview.png", 
+    "", 
+    "", 
+    "https://github.com/dave-sommerville/haunted-house",
+    ["",""]
+  );
+  const csharpRPG = new Portfolio(
+    "https://dave-sommerville.github.io/ds-code-releases/img/console-app-preview.png", 
+    "", 
+    "", 
+    "https://github.com/dave-sommerville/decorator-rpg",
+    ["",""]
+  );
+  const caseCollector = new Portfolio(
+    "https://dave-sommerville.github.io/ds-code-releases/img/case-collector-preview.jpg", 
+    "", 
+    "", 
+    "https://github.com/dave-sommerville/Case_Collector",
+    ["",""]
+  );
+  const havocAndHaven = new Portfolio(
+    "https://dave-sommerville.github.io/ds-code-releases/img/havoc-and-haven-preview.jpg", 
+    "", 
+    "", 
+    "https://github.com/dave-sommerville/Havoc_And_Haven",
+    ["",""]
+  );
+  const potionPortal = new Portfolio(
+    "https://dave-sommerville.github.io/ds-code-releases/img/dungeon-crawler-preview.jpg", 
+    "", 
+    "", 
+    "https://dave-sommerville.github.io/ds-code-releases/dungeons-of-draegmor",
+    ["",""]
+  );
+  const dungeonCrawler = new Portfolio(
+    "https://dave-sommerville.github.io/ds-code-releases/img/potion-portal-preview.gif", 
+    "", 
+    "", 
+    "https://github.com/dave-sommerville/pixie-potion-brewery",
+    ["",""]
+  );
+
 
   export const portfolioArray = [
     blackjack,
@@ -127,6 +174,14 @@
     meMyself,
     opalOnyx,
     hiveMind,
-    cactusTheatre
+    cactusTheatre,
+    cedarU,
+    switches,
+    hauntedHouse,
+    csharpRPG,
+    caseCollector,
+    havocAndHaven,
+    potionPortal,
+    dungeonCrawler
   ];
 
