@@ -39,7 +39,9 @@ h3 {
   font-size: 2rem;
 }
 
-
+h4 {
+  margin: 5px;
+}
 .cursor {
   visibility: hidden;
 }

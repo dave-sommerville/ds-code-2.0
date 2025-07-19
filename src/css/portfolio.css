@@ -8,11 +8,34 @@ a {
   color: var(--clr-light);
 }
 
+.portfolio-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  padding-top: 80px;
+  color: var(--clr-light);
+  transition: var(--app-transition);
+}
+.portfolio-form label {
+  font-size: 1.2rem;
+  color: var(--clr-light);
+  margin-bottom: 10px;
+}
+.category-select {
+  width: 300px;
+  height: 50px;
+  font-size: 1rem;
+  border-radius: var(--app-border-rad);
+}
 .portfolio-wrapper {
   height: 650px;
   position: relative;
   transition: var(--app-transition);
 }
+
 .info-title {
   font-size: 2rem;
   margin: 25px 0;
@@ -30,7 +53,6 @@ a {
 .portfolio-title {
   font-size: 2rem; 
   text-align: center;
-  margin-bottom: var(--app-spacing);
 }
 .portfolio-description {
   width: 400px;

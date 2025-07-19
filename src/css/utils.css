@@ -129,3 +129,45 @@ ul {
 .z100 {
   z-index: 100;
 }
+
+.btn {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: var(--clr-primary);
+  border: 1px solid transparent;
+  border-radius: var(--app-border-rad);
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  cursor: pointer;
+  margin: 0;
+  padding: 6.5px;
+  position: relative;
+  text-decoration: none;
+  transition: var(--app-transition);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  i {
+    font-size: 1.4rem;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
+}
+.btn:hover {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}

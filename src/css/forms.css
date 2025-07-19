@@ -46,7 +46,11 @@
 	Contact Section
 <------------------------------------------------------------*/
 .contact {
+  padding-top: 80px;
+  color: var(--clr-light);
   width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 .message {

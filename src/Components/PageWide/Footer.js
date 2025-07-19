@@ -5,7 +5,7 @@ import '../../css/footer.css';
 
 function Footer() {
   return (
-    <footer className="container">
+    <footer>
       <div className="footer-columns">
         <div className="footer-column">
           <h4>Portfolio</h4>
@@ -37,7 +37,7 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2025 Fake Store. All rights reserved.</p>
+        <p>Dave Sommerville © 2025 DS Code</p>
         <div className="social-icons">
           <a href="mailto:dave.r.sommerville@outlook.com">
             <FaEnvelope />

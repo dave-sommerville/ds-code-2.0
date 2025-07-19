@@ -5,7 +5,7 @@ import '../css/forms.css';
 
 function Contact() {
   return(
-    <section>
+    <section className="contact">
       <EmailForm />
       <SocialMediaHexes />
     </section>

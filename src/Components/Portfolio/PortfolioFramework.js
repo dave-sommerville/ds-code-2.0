@@ -56,10 +56,10 @@ function PortfolioFramework({ items }) {
         </a>
       </div>
 
-      <button className="arrow-btn left-btn" onClick={() => adjustIndex('-')}>
+      <button className="arrow-btn left-btn btn" onClick={() => adjustIndex('-')}>
         <FaArrowLeft />
       </button>
-      <button className="arrow-btn right-btn" onClick={() => adjustIndex('+')}>
+      <button className="arrow-btn right-btn btn" onClick={() => adjustIndex('+')}>
         <FaArrowRight />
       </button>
     </div>

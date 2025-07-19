@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { portfolioArray } from '../../BLL/PortfolioItems.js';
 import PortfolioFramework from './PortfolioFramework';
-
+import '../../css/portfolio.css';
 function SelectionInput() {
   const [selectedCategory, setSelectedCategory] = useState('');
   const [filteredItems, setFilteredItems] = useState(portfolioArray || []);
@@ -25,9 +25,9 @@ function SelectionInput() {
   };
 
   return (
-    <div>
+    <div className="portfolio-form">
       <label htmlFor="categorySelect">Filter by Category: </label>
-      <select id="categorySelect" value={selectedCategory} onChange={handleChange}>
+      <select class="category-select" value={selectedCategory} onChange={handleChange}>
         <option value="">-- All --</option>
         {allCategories.map(cat => (
           <option key={cat} value={cat}>{cat}</option>
