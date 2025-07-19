@@ -1,35 +1,37 @@
 import { Link } from 'react-router-dom';
-import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
+import '../../css/footer.css';
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="container">
       <div className="footer-columns">
         <div className="footer-column">
-          <h4>Customer Support</h4>
+          <h4>Portfolio</h4>
           <ul>
-            <li><Link to="/contact">Contact Us</Link></li>
-            <li><Link to="/help-centre">Help Centre</Link></li>
-            <li><Link to="/returns">Returns & Exchanges</Link></li>
-            <li><Link to="/gift-cards">Gift Cards</Link></li>
+            <li><Link to="/portfolio">Work Examples</Link></li>
+            <li><Link to="/releases">Release Page</Link></li>
+            <li><a href="https://github.com/dave-sommerville?tab=repositories" target="_blank" rel="noopener noreferrer">Repositories</a></li>
+            <li><a href="https://dave-sommerville.github.io/ds-code-releases/data/dave-sommerville-resume-2025.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
           </ul>
         </div>
         <div className="footer-column">
-          <h4>Services</h4>
+          <h4>Interal</h4>
           <ul>
-            <li><Link to="/membership">Membership</Link></li>
-            <li><Link to="/subscription">Subscription</Link></li>
-            <li><Link to="/financing">Financing</Link></li>
-            <li><Link to="/trade-in">Trade-In Program</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/">Collaborations</Link></li>
+            <li><Link to="/playground">Game  Center</Link></li>
           </ul>
         </div>
         <div className="footer-column">
-          <h4>About Us</h4>
+          <h4>Resources</h4>
           <ul>
-            <li><Link to="/careers">Careers</Link></li>
-            <li><Link to="/company-info">Company Information</Link></li>
-            <li><Link to="/community">In the Community</Link></li>
-            <li><Link to="/newsroom">Newsroom</Link></li>
+            <li><Link to="/">Filler</Link></li>
+            <li><Link to="/">Filler</Link></li>
+            <li><Link to="/">Filler</Link></li>
+            <li><Link to="/">Filler</Link></li>
           </ul>
         </div>
       </div>
@@ -37,16 +39,16 @@ function Footer() {
       <div className="footer-bottom">
         <p>© 2025 Fake Store. All rights reserved.</p>
         <div className="social-icons">
-          <a href="https://facebook.com" className="facebook" target="_blank" rel="noopener noreferrer">
-            <FaFacebookF />
+          <a href="mailto:dave.r.sommerville@outlook.com">
+            <FaEnvelope />
           </a>
-          <a href="https://instagram.com" className="instagram" target="_blank" rel="noopener noreferrer">
-            <FaInstagram />
+          <a href="https://github.com/dave-sommerville" target="_blank" rel="noopener noreferrer">
+            <FaGithub />
           </a>
-          <a href="https://twitter.com" className="twitter" target="_blank" rel="noopener noreferrer">
-            <FaTwitter />
+          <a href="https://linkedin.com/in/dave-sommerville-2abb50326" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin />
           </a>
-          <a href="https://youtube.com" className="youtube" arget="_blank" rel="noopener noreferrer">
+          <a href="https://www.youtube.com/@davesommerville-ds-code" target="_blank" rel="noopener noreferrer">
             <FaYoutube />
           </a>
         </div>

@@ -38,10 +38,7 @@ h3 {
   font-family: "IBM Plex Mono", "Noto Sans Mono", monospace;
   font-size: 2rem;
 }
-h4 {
-  font-size: 4rem;
-  margin: 0;
-}
+
 
 .cursor {
   visibility: hidden;

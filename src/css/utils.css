@@ -29,7 +29,11 @@
 /*----------------------------------------------------------->
   Utility Functions
 <-----------------------------------------------------------*/
-
+ul {
+  list-style: none;
+  padding: 0;
+  padding-left: 10px;
+}
 .container {
   width: min(100% - 30px, 1200px);
   margin-inline: auto;
