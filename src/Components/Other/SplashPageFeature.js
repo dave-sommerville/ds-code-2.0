@@ -1,17 +1,21 @@
-// SplashPageFeature.jsx
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import InfoExpander from '../PageWide/InfoExpander';
 import MarqueeText from './MarqueeText';
 
 function SplashPageFeature() {
   const topLinks = [
     { to: '/about', label: 'Story' },
     { to: '/portfolio', label: 'Work' },
-    { to: '/playground', label: 'Play' },
+    { to: '/playground', label: 'Play' }
   ];
 
   const [activeSection, setActiveSection] = useState(null);
+
+  const contentMap = {
+    Reviews: "Here are some kind words from collaborators and clients.",
+    Experience: "I’ve worked on a wide range of web and software projects.",
+    Education: "I’ve studied Computer Science and completed various certifications."
+  };
 
   const handleExpand = (section) => {
     setActiveSection(prev => (prev === section ? null : section));
@@ -31,16 +35,21 @@ function SplashPageFeature() {
 
       <div className="splash-grid-buttons">
         {['Reviews', 'Experience', 'Education'].map((label) => (
-          <button key={label} className="splash-item small" onClick={() => handleExpand(label)}>
-            {label}
-          </button>
+          <div
+            key={label}
+            className={`splash-item small ${activeSection === label ? 'expanded' : ''}`}
+            onClick={() => handleExpand(label)}
+            style={{ cursor: 'pointer' }}
+          >
+            <div className="splash-link">{label}</div>
+            {activeSection === label && (
+              <div className="info-expander-inline">
+                <p>{contentMap[label]}</p>
+              </div>
+            )}
+          </div>
         ))}
-        <Link to="/contact" className="splash-item small splash-link">
-          Contact
-        </Link>
       </div>
-
-      {activeSection && <InfoExpander section={activeSection} />}
 
       <MarqueeText text="Welcome to my world of code • Inspired by curiosity • Driven by coffee ☕ • Always learning •" />
     </div>

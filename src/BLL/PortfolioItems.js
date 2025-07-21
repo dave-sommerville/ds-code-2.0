@@ -91,7 +91,7 @@
     "Opal & Onyx",
     "Collaboration project exploring luxury ecommerce design.",
     "https://dave-sommerville.github.io/opal-and-onyx/",
-    ["featured","games", "ecommerce and organization"]
+    ["featured", "ecommerce and organization", "collaboration"]
   );
 
   const hiveMind = new Portfolio(
@@ -99,70 +99,70 @@
     "HiveMind", 
     "Collaboration project creating our own version of a social media site.", 
     "https://dave-sommerville.github.io/hivemind/",
-    ["featured","games"]
+    ["featured","social media", "collaboration"]
   );
   const cactusTheatre = new Portfolio(
     "https://dave-sommerville.github.io/ds-code-releases/img/cactus-preview.jpg", 
     "Cactus Theatre Co", 
     "Promotional website for Winnipeg Fringe Festival", 
     "https://cactus-theatre-co.ca",
-    ["featured","games"]
+    ["featured","ecommerce and organization", "freelance"]
   );
   const cedarU = new Portfolio(
     "https://dave-sommerville.github.io/ds-code-releases/img/cedar-university-preview.jpg", 
-    "", 
-    "", 
+    "Cedar university", 
+    "Informational website for fictional University", 
     "https://dave-sommerville.github.io/cedar-university-2024/",
-    ["",""]
+    ["ecommerce and organization","collaboration"]
   );
   const switches = new Portfolio(
     "https://dave-sommerville.github.io/ds-code-releases/img/switches-and-styles-preview.jpg", 
-    "", 
-    "", 
+    "Switches and Style", 
+    "Tutorial designed to teach switches and controls in html and css", 
     "https://dave-sommerville.github.io/switches-and-styles/",
-    ["",""]
+    ["tutorial"]
   );
   const hauntedHouse = new Portfolio(
     "https://dave-sommerville.github.io/ds-code-releases/img/console-app-preview.png", 
-    "", 
-    "", 
+    "C# Haunted House", 
+    "A c# haunted house console adventure", 
     "https://github.com/dave-sommerville/haunted-house",
-    ["",""]
+    ["console app","games"]
   );
   const csharpRPG = new Portfolio(
     "https://dave-sommerville.github.io/ds-code-releases/img/console-app-preview.png", 
-    "", 
-    "", 
+    "Basic c# rpg game", 
+    "Interactive program exploring decorator design pattern", 
     "https://github.com/dave-sommerville/decorator-rpg",
-    ["",""]
+    ["console app","games"]
   );
   const caseCollector = new Portfolio(
     "https://dave-sommerville.github.io/ds-code-releases/img/case-collector-preview.jpg", 
-    "", 
-    "", 
+    "Case Collector", 
+    "An organization system for criminal cases", 
     "https://github.com/dave-sommerville/Case_Collector",
-    ["",""]
+    ["full stack"]
   );
   const havocAndHaven = new Portfolio(
     "https://dave-sommerville.github.io/ds-code-releases/img/havoc-and-haven-preview.jpg", 
-    "", 
-    "", 
+    "Havoc and Haven", 
+    "Covering the real estate needs of hero and villain alike", 
     "https://github.com/dave-sommerville/Havoc_And_Haven",
-    ["",""]
+    ["full stack","social media"]
   );
   const potionPortal = new Portfolio(
     "https://dave-sommerville.github.io/ds-code-releases/img/dungeon-crawler-preview.jpg", 
-    "", 
-    "", 
+    "Pixie Pearl's Potion Portal", 
+    "Windows desktop app to manage see the effects of a variety of potions", 
     "https://dave-sommerville.github.io/ds-code-releases/dungeons-of-draegmor",
-    ["",""]
+    ["games","full stack", "featured"]
   );
   const dungeonCrawler = new Portfolio(
     "https://dave-sommerville.github.io/ds-code-releases/img/potion-portal-preview.gif", 
-    "", 
-    "", 
+    "Dungeons of Draegmor", 
+    "A text based console RPG game, with random generation and sandbox playstyle", 
     "https://github.com/dave-sommerville/pixie-potion-brewery",
-    ["",""]
+    ["console app","games", "featured"]
   );
 
 
