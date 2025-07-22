@@ -1,6 +1,7 @@
-function PdfPreviewList({srcUrl, title, size}) {
+
+function PdfPreviewList({srcUrl, title, size, index}) {
   return (
-    <div key={index} style={styles.child}>
+    <div key={index}>
       <iframe
         src={srcUrl}
         title={title}
