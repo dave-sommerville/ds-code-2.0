@@ -10,28 +10,25 @@ function Footer() {
         <div className="footer-column">
           <h4>Portfolio</h4>
           <ul>
-            <li><Link to="/portfolio">Work Examples</Link></li>
-            <li><Link to="/releases">Release Page</Link></li>
             <li><a href="https://github.com/dave-sommerville?tab=repositories" target="_blank" rel="noopener noreferrer">Repositories</a></li>
             <li><a href="https://dave-sommerville.github.io/ds-code-releases/data/dave-sommerville-resume-2025.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+            <li><Link to="/releases">Release</Link></li>
           </ul>
         </div>
         <div className="footer-column">
-          <h4>Interal</h4>
+          <h4>Info</h4>
           <ul>
             <li><Link to="/contact">Contact</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/">Collaborations</Link></li>
-            <li><Link to="/playground">Game  Center</Link></li>
           </ul>
         </div>
         <div className="footer-column">
-          <h4>Resources</h4>
+          <h4>More</h4>
           <ul>
-            <li><Link to="/">Filler</Link></li>
-            <li><Link to="/">Filler</Link></li>
-            <li><Link to="/">Filler</Link></li>
-            <li><Link to="/">Filler</Link></li>
+            <li><Link to="/portfolio">Portfolio</Link></li>
+            <li><Link to="/playground">Arcade</Link></li>
+            <li><Link to="/releases">Something else</Link></li>
           </ul>
         </div>
       </div>
