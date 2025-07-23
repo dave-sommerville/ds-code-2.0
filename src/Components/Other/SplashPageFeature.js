@@ -61,7 +61,7 @@ function SplashPageFeature() {
         </InfoButton>
       </div>
 
-      <MarqueeText text="Welcome to my world of code • Inspired by curiosity • Driven by coffee ☕ • Always learning •" />
+      {/* <MarqueeText text="Welcome to my world of code • Inspired by curiosity • Driven by coffee ☕ • Always learning •" /> */}
     </div>
   );
 }

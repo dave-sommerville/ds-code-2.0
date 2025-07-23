@@ -25,13 +25,12 @@ function FloatingHeader({ showImmediately = false, heroHeight = 0 }) {
   return (
     <nav ref={navRef} className={`floating-nav ${isVisible ? 'visible' : ''}`}>
       <div className="nav-container">
-        <div><span class="orange-text">&nbsp;DS </span>CODE</div>
+        <h3 className="header-title"><span class="orange-text">&nbsp;DS </span>CODE</h3>
         <button className="burger" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
           <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
           <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
           <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
         </button>
-
         <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
           <li><NavLink to="/" exact="true" className={({ isActive }) => isActive ? 'active' : ''}>Home</NavLink></li>
           <li><NavLink to="/about" className={({ isActive }) => isActive ? 'active' : ''}>Story</NavLink></li>

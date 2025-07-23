@@ -4,9 +4,7 @@
 */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Space Grotesk", "IBM Mono Plex", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--clr-drk);
@@ -16,10 +14,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-
+footer {
+/* background-color: var(--clr-bg); */
+}
 main, footer {
-  background-color: var(--clr-bg);
   position: relative;
   position: relative;
   z-index: 5000;
@@ -28,16 +26,22 @@ main, footer {
 main {
   display: block;
   margin: 0;
-  padding: 0;
+  padding: 5px;
 }
 
-
+.header-title {
+  font-size: 2.2rem;
+  margin: 0;
+}
 
 .splash-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  margin: 150px 0;
+  background: #e6efff0c;
+  backdrop-filter: blur(10px);
+  border-radius: var(--app-border-rad);
 }
 
 .splash-column {
@@ -46,50 +50,50 @@ main {
   gap: 1.5rem;
   margin-bottom: 2rem;
   width: 100%;
-  max-width: 400px;
+  max-width: 800px;
 }
 
 .splash-info-btn-wrapper {
   height: fit-content;
   width: 100%;
-  max-width: 900px;
+  max-width: 800px;
   display: flex;
   gap: 1rem;
   margin-bottom: 2rem;
-  
 }
 
 .info-btn {
   flex: 1;
   height: 80px;
-  background-color: var(--clr-light);
+  background-color: var(--clr-light-blue);
   border-radius: var(--app-border-rad);
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transition: var(--app-transition);
   overflow: hidden;
 }
+
 .info-btn:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
+
 .info-btn.expanded {
   flex: 1;
   height: 700px;
 }
+
 .open > *:not(.expanded) {
   flex: 0;
 }
 
-
 .splash-item {
-  background-color: var(--clr-light);
+  background-color: var(--clr-light-blue);
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   height: 120px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: var(--app-transition);
   overflow: hidden;
 }
-
 
 .splash-link {
   display: flex;
@@ -100,7 +104,7 @@ main {
   text-decoration: none;
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--clr-primary, #333);
+  color: var(--clr-primary);
 }
 
 .splash-item:hover {
@@ -131,7 +135,7 @@ main {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  background: #f0f0f0;
+  background: var(--clr-drk);
   padding: 1rem 0;
   margin-top: 2rem;
 }
@@ -141,7 +145,7 @@ main {
   padding-left: 100%;
   animation: scroll-left 20s linear infinite;
   font-weight: bold;
-  color: #333;
+  color: lightgreen;
 }
 
 @keyframes scroll-left {
