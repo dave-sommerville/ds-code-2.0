@@ -19,50 +19,52 @@ function SplashPageFeature() {
   };
 
   return (
-    <div className="splash-wrapper">
-      <div className="splash-column">
-        {topLinks.map((link) => (
-          <div key={link.to} className="splash-item">
-            <Link to={link.to} className="splash-link">
-              {link.label}
-            </Link>
-          </div>
-        ))}
+    <section className="home-page">
+      <div className="splash-wrapper">
+        <div className="splash-column">
+          {topLinks.map((link) => (
+            <div key={link.to} className="splash-item">
+              <Link to={link.to} className="splash-link">
+                {link.label}
+              </Link>
+            </div>
+          ))}
+        </div>
+
+        <div className={`splash-info-btn-wrapper ${isAnyExpanded ? 'open' : ''}`}>
+          <InfoButton
+            label="Reviews"
+            isActive={activeSection === 'Reviews'}
+            onClick={() => handleExpand('Reviews')}
+          >
+            <ul>
+              <img src=""></img>
+            </ul>
+          </InfoButton>
+
+          <InfoButton
+            label="Experience"
+            isActive={activeSection === 'Experience'}
+            onClick={() => handleExpand('Experience')}
+          >
+            <div className="experience-gallery">
+              <img src="/images/project1.png" alt="Project 1" />
+              <img src="/images/project2.png" alt="Project 2" />
+            </div>
+          </InfoButton>
+
+          <InfoButton
+            label="Education"
+            isActive={activeSection === 'Education'}
+            onClick={() => handleExpand('Education')}
+          >
+            <PdfPreview file="/docs/resume.pdf" />
+          </InfoButton>
+        </div>
+
+        {/* <MarqueeText text="Welcome to my world of code • Inspired by curiosity • Driven by coffee ☕ • Always learning •" /> */}
       </div>
-
-      <div className={`splash-info-btn-wrapper ${isAnyExpanded ? 'open' : ''}`}>
-        <InfoButton
-          label="Reviews"
-          isActive={activeSection === 'Reviews'}
-          onClick={() => handleExpand('Reviews')}
-        >
-          <ul>
-            <img src=""></img>
-          </ul>
-        </InfoButton>
-
-        <InfoButton
-          label="Experience"
-          isActive={activeSection === 'Experience'}
-          onClick={() => handleExpand('Experience')}
-        >
-          <div className="experience-gallery">
-            <img src="/images/project1.png" alt="Project 1" />
-            <img src="/images/project2.png" alt="Project 2" />
-          </div>
-        </InfoButton>
-
-        <InfoButton
-          label="Education"
-          isActive={activeSection === 'Education'}
-          onClick={() => handleExpand('Education')}
-        >
-          <PdfPreview file="/docs/resume.pdf" />
-        </InfoButton>
-      </div>
-
-      {/* <MarqueeText text="Welcome to my world of code • Inspired by curiosity • Driven by coffee ☕ • Always learning •" /> */}
-    </div>
+    </section>
   );
 }
 

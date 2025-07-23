@@ -15,7 +15,7 @@ article {
   flex-direction: row;
   justify-content: space-between;
   color: var(--clr-light);
-  font-size: 1.2rem;
+  font-size: var(--font-size-reg);
   padding: var(--app-spacing);
   margin-bottom: var(--app-spacing);
   padding-right: var(--app-spacing);
@@ -38,9 +38,6 @@ figure {
 }
 
 @media(max-width: 900px) {
-  article {
-    font-size: 1rem;
-  }
 }
 
 @media(max-width: 600px) {
@@ -51,7 +48,4 @@ figure {
 }
 
 @media(max-width: 480px) {
-  article {
-    font-size: 0.8rem;
-  }
 }

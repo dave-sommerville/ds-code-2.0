@@ -13,27 +13,29 @@ header {
   color: var(--clr-light);
 }
 
-h1,h2,h3,h4 {
+/* h1,h2,h3,h4 {
   text-shadow: -1px 1px 2px var(--clr-light-blue);
-}
+} */
 
-h1 {
-  font-size: 6.5rem;
+header h1 {
+  font-size: var(--font-size-title);
   text-align: center;
-  margin-top: 6.5rem;
+  padding-top: 6.5rem;
+  margin: 0;
   span {
     color: var(--clr-primary);
     text-shadow: -1px 1px 2px var(--clr-tan);
   }
 }
 
-h2 {
-  width: min(50svw, 800px);
-  font-size: 3.5rem;
+header h2 {
+  width: min(45svw, 800px);
+  font-size: var(--font-size-subtitle);
   margin-top: -25px;
-
 }
-
+header h3 {
+  font-size: var(--font-size-reg);
+}
 h4 {
   margin: 5px;
 }
