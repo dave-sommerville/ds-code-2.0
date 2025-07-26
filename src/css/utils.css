@@ -13,7 +13,6 @@
   --clr-primary: #f37121;
   --clr-hover: #e96240;
   --clr-tan: #ffd484;
-  --app-spacing: 25px;
   --app-clip-hex: polygon(
     25% 0, 
     75% 0, 
@@ -21,9 +20,11 @@
     75% 100%, 
     25% 100%, 
     0 50%
-  ); 
+    ); 
+  --app-spacing: 25px;
   --app-border-rad: 6px;
   --app-transition: all 0.3s ease-in-out;
+  --app-box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   --small-font-size: 0.8rem;
   --font-size-reg: 1.4rem;
   --font-size-subtitle: 3.4rem;
@@ -32,10 +33,31 @@
 
 @media(max-width: 800px) {
   :root {
+  --app-spacing: 15px;
+
+  --small-font-size: 0.8rem;
+  --font-size-reg: 1.2rem;
+  --font-size-subtitle: 2.4rem;
+  --font-size-title: 4rem;  }
+}
+
+@media(max-width: 500px) {
+  :root {
+    --app-spacing: 10px;
+
   --small-font-size: 0.6rem;
   --font-size-reg: 1rem;
   --font-size-subtitle: 1.8rem;
   --font-size-title: 3rem;  }
+}
+@media(max-width: 900px) {
+  .small-hide {
+    display: none;
+    opacity: 0;
+  }
+  .small-solid-orange-hex-one, .med-orange-hex-one {
+    display: none;
+  }
 }
 /*----------------------------------------------------------->
   Utility Functions
@@ -147,9 +169,9 @@ ul {
   background-color: var(--clr-primary);
   border: 1px solid transparent;
   border-radius: var(--app-border-rad);
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  color: #fff;
-  font-size: 1.2rem;
+  box-shadow: var(--app-box-shadow);
+  color: var(--clr-light);
+  font-size: var(--font-size-reg);
   font-weight: 600;
   justify-content: center;
   line-height: 1.25;

@@ -73,7 +73,7 @@ main {
   height: 80px;
   background-color: var(--clr-light-blue);
   border-radius: var(--app-border-rad);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: var(--app-box-shadow);
   transition: var(--app-transition);
   overflow: hidden;
 }
@@ -95,7 +95,7 @@ main {
 .splash-item {
   background-color: var(--clr-light-blue);
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: var(--app-box-shadow);
   height: 120px;
   transition: var(--app-transition);
   overflow: hidden;
@@ -108,7 +108,7 @@ main {
   height: 100%;
   width: 100%;
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: var(--font-size-reg);
   font-weight: 600;
   color: var(--clr-primary);
 }
@@ -117,24 +117,12 @@ main {
   transform: translateY(-4px);
   box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
-
-
 .splash-wrapper {
   margin-bottom: 0; /* just in case */
 }
 .splash-item.small.expanded {
   height: auto;
   padding: 1rem;
-}
-@media (max-width: 768px) {
-  .splash-grid-buttons {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
 }
 
 .marquee-container {
@@ -154,6 +142,11 @@ main {
   color: lightgreen;
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 @keyframes scroll-left {
   0% {
     transform: translateX(0%);
@@ -162,6 +155,15 @@ main {
     transform: translateX(-100%);
   }
 }
+
+@media (max-width: 768px) {
+  .splash-grid-buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/*
 .icon {
   width: 50px;
   height: 50px;
@@ -175,73 +177,4 @@ main {
   width: 40px;
   height: 40px;
 }
-/*----------------------------------------------------------->
-	Bottom of page
-<------------------------------------------------------------*/
-@media(max-width: 1000px) {
-  h1 {
-    font-size: 5rem;
-  }
-}
-/*This should be a utility class*/
-@media(max-width: 900px) {
-  .small-hide {
-    display: none;
-    opacity: 0;
-  }
-  .small-solid-orange-hex-one, .med-orange-hex-one {
-    display: none;
-  }
-}
-@media (max-width: 780px) {
-  :root{
-    --app-spacing: 15px;
-    --app-font-size: 1.4rem;
-  }
-
-  h1 {
-    font-size: 4rem;
-  }
-  h2 {
-    font-size: 2rem;
-    margin-top: -10px;
-  }
-  h3 {
-    font-size: 1.7rem;
-  }
-}
-
-@media (max-width: 650px) {
-  h1 {
-    font-size: 3rem;
-  }
-  .text {
-    width: 80svw;
-  }
-}
-
-@media (max-width: 480px) {
-  :root{
-    --app-spacing: 10px;
-    --app-font-size: 1.2rem;
-  }
-  h1 {
-    font-size: 2.5rem;
-  }
-  h2 {
-    font-size: 1.7rem;
-    margin: 0;
-  }
-  h3 {
-    font-size: 1.2rem;
-  }
-  .pop-out {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    .game-wrapper {
-      height: 400px;
-    }
-  }
-} 
+*/
