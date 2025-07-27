@@ -2,9 +2,15 @@
 import './css/index.css';
 import './css/utils.css';
 import AppRoutes from './BLL/Routes';
+import ScrollToTop from './BLL/ScrollToTop';
 
 function App() {
-  return <AppRoutes />;
+  return(
+    <>
+      <ScrollToTop></ScrollToTop>
+      <AppRoutes />;
+    </>
+  );
 }
 
 export default App;

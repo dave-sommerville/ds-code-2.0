@@ -2,13 +2,21 @@ import EmailForm from '../Components/Other/EmailForm.js';
 import SocialMediaHexes from '../Components/Other/SocialMediaHexes.js';
 import '../css/social-media-hexes.css';
 import '../css/forms.css';
+import { motion } from 'framer-motion';
 
 function Contact() {
   return(
-    <section className="contact">
-      <EmailForm />
-      <SocialMediaHexes />
-    </section>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.4 }}
+    >
+      <section className="contact">
+        <EmailForm />
+        <SocialMediaHexes />
+      </section>
+    </motion.div>
   );
 }
 export default Contact;
