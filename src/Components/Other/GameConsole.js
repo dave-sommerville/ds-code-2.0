@@ -7,62 +7,58 @@ import '../../css/hangman.css';
 function GameConsole() {
   return(
     <div className="game-console">
-      <div className="top-bar">
-        <div className="exit-game">
-          &times;
-        </div>
+      <div className="game-intro">
+        <h3>THE ARCADE(i)</h3>
       </div>
-      <a 
-        href="" 
-        target="_blank"
-        className="game-icon"
-      >
-        <figure>
-        <img src={blackjackIcon}></img>
-        </figure>
-        <figcaption>Blackjack</figcaption>
-      </a>
-      <a 
-        href="" 
-        target="_blank"
-        className="game-icon"
-      >
-        <figure>
-
-        <img src={scriptIcon}></img>
-        </figure>
-        <figcaption>Script Scavengers</figcaption>
-      </a>
-      <a 
-        href="" 
-        target="_blank"
-        className="game-icon"
-      >
-        <figure>
-
-        <img src={codeIcon}></img>
-        </figure>
-        <figcaption>Code Breaker</figcaption>
-      </a>
-      <a 
-        href="" 
-        target="_blank"
-        className="game-icon"
-      >
-        <figure>
-
-        <img src={boogleIcon}></img>
-        </figure>
-        <figcaption>Boogle</figcaption>
-      </a>
-      <div
-        className="game-icon"
-      >
-        <figure>
-
-        <img src={hangmanIcon}></img>
-        </figure>
-        <figcaption>Hangman</figcaption>
+      <div className="icon-wrapper">
+        <a 
+          href="" 
+          target="_blank"
+          className="game-icon"
+        >
+          <figure>
+            <img src={blackjackIcon}></img>
+          </figure>
+          <figcaption>Blackjack</figcaption>
+        </a>
+        <a 
+          href="" 
+          target="_blank"
+          className="game-icon"
+        >
+          <figure>
+            <img src={scriptIcon}></img>
+          </figure>
+          <figcaption>Script Scavengers</figcaption>
+        </a>
+        <a 
+          href="" 
+          target="_blank"
+          className="game-icon"
+        >
+          <figure>
+            <img src={codeIcon}></img>
+          </figure>
+          <figcaption>Code Breaker</figcaption>
+        </a>
+        <a 
+          href="" 
+          target="_blank"
+          className="game-icon"
+        >
+          <figure>
+            <img src={boogleIcon}></img>
+          </figure>
+          <figcaption>Boogle</figcaption>
+        </a>
+        <div
+          className="game-icon"
+          >
+          <figure>
+            <img src={hangmanIcon}></img>
+          </figure>
+          <figcaption>Hangman</figcaption>
+        </div>
       </div>
     </div>
   );

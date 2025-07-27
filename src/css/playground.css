@@ -1,33 +1,62 @@
 @charset "utf-8";
+:root {
+  --app-scrn-size: 70svh;
+}
 
+@media(orientation: portrait) {
+  :root {
+    --app-scrn-size: 70svw;
+  }
+}
 .playground {
   height: 100svh;
   display: flex;
-  padding: 200px;
   justify-content: center;
-  align-self: center;
+  align-items: center;
 }
 
 .game-console {
   image-rendering: pixelated;
-  height: 500px;
-  width: 500px;
+  height: var(--app-scrn-size);
+  width: var(--app-scrn-size);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-light-blue);
+  border-bottom: solid 40px #6700dd29;
+  border-top: solid 40px #6700dd29;
+  border-right: solid 40px #6700dd13;
+  border-left: solid 40px #6700dd13;
+background-clip: padding-box;
+}
+.icon-wrapper {
+  height: 100%;
+  max-width: 300px;
   display: flex;
   flex-wrap: wrap;
-  background-color: #9c9ca7;
+  color: var(--clr-bg);
 }
-.game-console figure {
+.game-intro {
+  height: fit-content;
+  width: 50%;
+  background-color: var(--clr-bg);
+  border: solid 2px var(--clr-primary);
+  color: var(--clr-light);
+  font-size: var(--font-size-small);
+  font-family: "Kode Mono";
   margin: var(--app-spacing);
-  padding: 10px;
-  width: 90px;
-  height: 120px;
-  color: var(--clr-drk);
-  text-align: center;
-  font-size: 0.8rem;
 }
+
+.game-intro h3 {
+  text-align: center;
+  margin: 0;
+  font-size: var(--font-size-reg);
+}
+
 .game-console figcaption {
+  font-size: 0.8rem;
+  color: var(--clr-drk);
   text-align: center;
 }
 .game-console img {
-  width: 80px;
+  width: 6svh;
 }
