@@ -1,4 +1,33 @@
 @charset "utf-8";
-.arcade {
+
+.playground {
   height: 100svh;
+  display: flex;
+  padding: 200px;
+  justify-content: center;
+  align-self: center;
+}
+
+.game-console {
+  image-rendering: pixelated;
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #9c9ca7;
+}
+.game-console figure {
+  margin: var(--app-spacing);
+  padding: 10px;
+  width: 90px;
+  height: 120px;
+  color: var(--clr-drk);
+  text-align: center;
+  font-size: 0.8rem;
+}
+.game-console figcaption {
+  text-align: center;
+}
+.game-console img {
+  width: 80px;
 }
