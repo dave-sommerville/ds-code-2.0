@@ -5,7 +5,7 @@ function InfoButton({ label, isActive, onClick, children }) {
       onClick={onClick}
       style={{ cursor: 'pointer' }}
     >
-      <div className="splash-link">{label}</div>
+    <div className="splash-link">{label}</div>
       {isActive && (
         <div className="info-expander-inline">
           {children}

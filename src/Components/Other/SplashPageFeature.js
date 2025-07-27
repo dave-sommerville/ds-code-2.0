@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import MarqueeText from './MarqueeText';
 import InfoButton from '../PageWide/InfoButton';
-import PdfPreview from '../PageWide/PdfPreview'; // or wherever it lives
-
+import andrePreview from '../../media/img/reviews/andre-linked-in-review.png'
 function SplashPageFeature() {
   const topLinks = [
     { to: '/about', label: 'Story' },
@@ -38,8 +36,9 @@ function SplashPageFeature() {
             onClick={() => handleExpand('Reviews')}
           >
             <ul>
-              <img src=""></img>
+              <img src={andrePreview}></img>
             </ul>
+            <a href="https://ds-code.ca" class="raised-link">Click Here</a>
           </InfoButton>
 
           <InfoButton
@@ -58,7 +57,6 @@ function SplashPageFeature() {
             isActive={activeSection === 'Education'}
             onClick={() => handleExpand('Education')}
           >
-            <PdfPreview file="/docs/resume.pdf" />
           </InfoButton>
         </div>
 

@@ -1,15 +1,13 @@
 
-function PdfPreviewList({srcUrl, title, size, index}) {
+function PdfPreview({srcUrl, title, index}) {
   return (
     <div key={index}>
       <iframe
         src={srcUrl}
         title={title}
-        width={size}
-        height={size}
       ></iframe>
-      <span style={title}>{title}</span>
+      <span>{title}</span>
     </div>
   );
 }
-export default PdfPreviewList;
+export default PdfPreview;
