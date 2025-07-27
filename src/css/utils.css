@@ -13,6 +13,7 @@
   --clr-primary: #f37121;
   --clr-hover: #e96240;
   --clr-tan: #ffd484;
+  --clr-blur-bg: #e6efff0c;
   --app-clip-hex: polygon(
     25% 0, 
     75% 0, 
@@ -101,13 +102,6 @@ ul {
   filter: brightness(0.8) saturate(1.3);
 }
 
-.hover {
-    transition: var(--app-transition);
-}
-.hover:hover, .hover.secondary:hover {
-  color: var(--clr-blue);
-  transform: scale(1.008);
-}
 .center {
   justify-content: center;
   align-items: center;
@@ -164,35 +158,39 @@ ul {
   z-index: 100;
 }
 
-.btn {
-  align-items: center;
-  background-clip: padding-box;
-  background-color: var(--clr-primary);
-  border: 1px solid transparent;
-  border-radius: var(--app-border-rad);
-  box-shadow: var(--app-box-shadow);
-  color: var(--clr-light);
-  font-size: var(--font-size-reg);
-  font-weight: 600;
-  justify-content: center;
-  line-height: 1.25;
-  cursor: pointer;
-  margin: 0;
-  padding: 6.5px;
-  position: relative;
-  text-decoration: none;
-  transition: var(--app-transition);
+button {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: baseline;
+  background-clip: padding-box;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0;
+
+}
+
+.btn {
+  align-items: center;
+  background-color: var(--clr-primary);
+  border: 1px solid transparent;
+  border-radius: var(--app-border-rad);
+  box-shadow: var(--app-box-shadow);
+  padding: 5px 0;
+  color: var(--clr-drk);
+  font-size: var(--font-size-reg);
+  font-weight: 600;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  transition: var(--app-transition);
   width: auto;
-  i {
+  /* i {
     font-size: 1.4rem;
     width: 25px;
     height: 25px;
     line-height: 25px;
-  }
+  } */
 }
 .btn:hover {
   background-color: #fb8332;

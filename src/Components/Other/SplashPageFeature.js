@@ -1,7 +1,13 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import InfoButton from '../PageWide/InfoButton';
-import andrePreview from '../../media/img/reviews/andre-linked-in-review.png'
+import andreReview from '../../media/img/reviews/andre-linked-in-review.png';
+import creefordReview from '../../media/img/reviews/creeford-linked-in-review.png';
+import gurpreetReview from '../../media/img/reviews/gurpreet-linked-in-review.png';
+import samReview from '../../media/img/reviews/sam-linked-in-review.png';
+import { ProfileObject } from '../../BLL/Profile';
+import PdfPreviewGallery from '../PageWide/PdfPreviewGallery';
+
 function SplashPageFeature() {
   const topLinks = [
     { to: '/about', label: 'Story' },
@@ -11,7 +17,8 @@ function SplashPageFeature() {
 
   const [activeSection, setActiveSection] = useState(null);
   const isAnyExpanded = activeSection !== null;
-
+  const linkedInProfile = ProfileObject.linkedIn.linkUrl;
+  console.log(linkedInProfile);
   const handleExpand = (section) => {
     setActiveSection(prev => (prev === section ? null : section));
   };
@@ -35,10 +42,21 @@ function SplashPageFeature() {
             isActive={activeSection === 'Reviews'}
             onClick={() => handleExpand('Reviews')}
           >
-            <ul>
-              <img src={andrePreview}></img>
+            <ul className="reviews-list">
+              <li>
+                <img src={gurpreetReview}></img>
+              </li>
+              <li>
+                <img src={samReview}></img>
+              </li>
+              <li>
+                <img src={andreReview}></img>
+              </li>
+              <li>
+                <img src={creefordReview}></img>
+              </li>
             </ul>
-            <a href="https://ds-code.ca" class="raised-link">Click Here</a>
+            <a href={linkedInProfile} target="_blank" rel="noopener noreferrer" class="raised-link">Click Here</a>
           </InfoButton>
 
           <InfoButton
@@ -57,6 +75,7 @@ function SplashPageFeature() {
             isActive={activeSection === 'Education'}
             onClick={() => handleExpand('Education')}
           >
+            <PdfPreviewGallery pdfLinks={ProfileObject.certfificates}></PdfPreviewGallery>
           </InfoButton>
         </div>
 

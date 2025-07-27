@@ -63,8 +63,9 @@ h4 {
 .btn-wrapper {
   margin: auto;
   z-index: 1000;
-  background-color: #fefefe30;
-  padding: var(--app-border-rad);
+  background: var(--clr-blur-bg);
+  backdrop-filter: blur(10px);
+  padding: var(--app-spacing);
   border-radius: var(--app-border-rad);
   a {
     width: 150px;
@@ -73,8 +74,8 @@ h4 {
   }
 }
 .btn.secondary {
-  background-color: var(--clr-light);
-  color: var(--clr-primary);
+  background-color: var(--clr-drk);
+  color: var(--clr-light);
 }
 .parallax {
   position: fixed;

@@ -18,20 +18,17 @@
       return this.#linkUrl;
     }
   }
-  const gitProfile = new Link("Github Profile", "");
-  const gitRepos = new Link("GitHub Repositories","");
-  const LinkedIn = new Link("LinkedIn","");
-  const youTube = new Link("YouTube","");
+
   const learningCertificates = [
-    new Link("https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_Advanced%20Prompt%20Engineering%20Techniques.pdf",""),
-    new Link("https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_Cert%20Prep%20Scrum%20Master.pdf",""),
-    new Link("https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_Microsoft%20Power%20Platform%20Fundamentals%20PL900%20Exam%20Tips.pdf",""),
-    new Link("https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_React%20Essential%20Training.pdf",""),
-    new Link("https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_Scrum%20Advanced.pdf",""),
-    new Link("https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_SEO%20Foundations.pdf",""),
-    new Link("https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_Sharepoint%20Online%20Essential%20Training%20Beyond%20the%20Basics.pdf",""),
-    new Link("https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_SharePoint%20Online%20Essential%20Training%20The%20Basics.pdf",""),
-    new Link("https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_Web%20Accessibility%20for%20Developers.pdf","")
+    new Link("", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_Advanced%20Prompt%20Engineering%20Techniques.pdf#toolbar=0&navpanes=0"),
+    new Link("", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_Cert%20Prep%20Scrum%20Master.pdf#toolbar=0&navpanes=0"),
+    new Link("", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_Microsoft%20Power%20Platform%20Fundamentals%20PL900%20Exam%20Tips.pdf#toolbar=0&navpanes=0"),
+    new Link("", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_React%20Essential%20Training.pdf#toolbar=0&navpanes=0"),
+    new Link("", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_Scrum%20Advanced.pdf#toolbar=0&navpanes=0"),
+    new Link("", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_SEO%20Foundations.pdf#toolbar=0&navpanes=0"),
+    new Link("", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_Sharepoint%20Online%20Essential%20Training%20Beyond%20the%20Basics.pdf#toolbar=0&navpanes=0"),
+    new Link("", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_SharePoint%20Online%20Essential%20Training%20The%20Basics.pdf#toolbar=0&navpanes=0"),
+    new Link("", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_Web%20Accessibility%20for%20Developers.pdf#toolbar=0&navpanes=0")
   ];
 
   export const ProfileObject = {
@@ -44,10 +41,9 @@
     imgNameTwo: "Opal and Onyx preview",
     articleThreeImgUrl: "https://dave-sommerville.github.io/ds-code-releases/img/blackjack-preview-start.jpg",
     imgNameThree: "Blackjack preview",
-    links: [
-      gitProfile,
-      gitRepos,
-      LinkedIn,
-      youTube
-    ]
+    gitProfile: new Link("Github Profile", ""),
+    gitRepos: new Link("GitHub Repositories",""),
+    linkedIn: new Link("LinkedIn","https://www.linkedin.com/in/dave-sommerville-2abb50326"),
+    youTube: new Link("YouTube",""),
+    certfificates: learningCertificates
   }

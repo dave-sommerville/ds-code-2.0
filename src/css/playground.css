@@ -1,11 +1,13 @@
 @charset "utf-8";
 :root {
   --app-scrn-size: 70svh;
+  --app-icon-size: 6svh;
 }
 
 @media(orientation: portrait) {
   :root {
     --app-scrn-size: 70svw;
+    --app-icon-size: 6svw;
   }
 }
 .playground {
@@ -58,5 +60,5 @@ background-clip: padding-box;
   text-align: center;
 }
 .game-console img {
-  width: 6svh;
+  width: var(--app-icon-size);
 }
