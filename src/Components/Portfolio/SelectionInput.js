@@ -26,7 +26,6 @@ function SelectionInput() {
 
   return (
     <div className="portfolio-form">
-      <label htmlFor="categorySelect">Filter by Category: </label>
       <select class="category-select" value={selectedCategory} onChange={handleChange}>
         <option value="">-- All --</option>
         {allCategories.map(cat => (

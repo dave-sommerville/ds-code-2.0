@@ -40,7 +40,7 @@ footer {
 
 .social-icons a {
   margin-left: 15px;
-  font-size: var(--font-size-subtitle);
+  font-size: var(--font-size-reg);
   color: var(--clr-light);
   transition: var(--app-transition);
 }

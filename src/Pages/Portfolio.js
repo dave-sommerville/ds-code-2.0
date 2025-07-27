@@ -1,7 +1,7 @@
+import HexLinks from "../Components/Portfolio/HexLinks";
 import SelectionInput from "../Components/Portfolio/SelectionInput";
-import PortfolioFramework from "../Components/Portfolio/PortfolioFramework";
-import PortfolioItems from "../BLL/PortfolioItems";
 import { motion } from 'framer-motion';
+
 function Portfolio() {
   return(
     <motion.div
@@ -10,8 +10,9 @@ function Portfolio() {
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.4 }}
     >
-      <section>
+      <section className="portfolio-wrapper">
         <SelectionInput />
+        <HexLinks />
       </section>
     </motion.div>
   );

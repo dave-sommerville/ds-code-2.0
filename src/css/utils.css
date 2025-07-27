@@ -127,6 +127,7 @@ ul {
 }
 .pos-rel {
   position: relative;
+  z-index: 1;
 }
 
 .z1 {

@@ -34,7 +34,6 @@ function PortfolioFramework({ items }) {
 
   return (
     <div className="portfolio-framework">
-      <div className="portfolio-wrapper">
         <h3 className="info-title">{imageLoaded ? "Project Preview" : "Loading..."}</h3>
         {imageLoaded && (
           <img
@@ -54,7 +53,6 @@ function PortfolioFramework({ items }) {
         >
           <FaArrowUpRightFromSquare />
         </a>
-      </div>
 
       <button className="arrow-btn left-btn btn" onClick={() => adjustIndex('-')}>
         <FaArrowLeft />
@@ -62,7 +60,7 @@ function PortfolioFramework({ items }) {
       <button className="arrow-btn right-btn btn" onClick={() => adjustIndex('+')}>
         <FaArrowRight />
       </button>
-    </div>
+      </div>
   );
 }
 

@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import '../../css/hero-banner.css';
 import '../../css/utils.css';
 import honeyComb from '../../media/img/honeycomb.svg';
-
+import { Link } from 'react-router-dom';
 const parallaxLayers = [
   { className: 'large-orange-hex', speed: 0.4 },
   { className: 'med-orange-hex-one', speed: 0.6 },
@@ -67,8 +67,8 @@ export default function HeroBanner({ setHeroHeight }) {
       ))}
 
       <div className="btn-wrapper f-col center">
-        <a href="./portfolio.html" className="btn">Portfolio</a>
-        <a href="#email" className="btn secondary">Say Hi</a>
+        <Link to="/portfolio" className="btn">Portfolio</Link>
+        <Link to="/contact" className="btn secondary">Say Hi</Link>
       </div>
     </header>
   );

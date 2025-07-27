@@ -3,10 +3,11 @@
 :root {
   --base-size: 70px;
   --neg-base-size: calc(var(--base-size) * -1);
-  --tb-margin: calc(var(--neg-base-size) / 2);
+  --tb-margin: calc(var(--base-size) / 2);
   --lr-margin: calc(var(--neg-base-size) / 4);
-  --app-spacing: 25px;
-  --app-font-size: 1.6rem;
+
+  --font-size-icons: 3rem;
+  --font-size-captions: 1rem;
 }
 
 
@@ -16,19 +17,45 @@
 .m-auto {
   margin: -25px auto;
 }
+.hex-parent {
+  display: flex;
+  position: relative;
 
+}
 .hex {
   clip-path: var(--app-clip-hex);
   width: var(--base-size);
   height: var(--base-size);
   background-color: var(--clr-primary);
+  display: flex;
   justify-content: center;
   align-items: center;
   color: var(--clr-drk);
   margin: 0 5px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.hex-icon {
+  font-size: var(--font-size-icons);
+}
+.icon-caption {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  font-size: var(--font-size-captions);
+  color: var(--clr-light);
 }
 
-.mid-hex {
+.icon-caption.top {
+  top: -50px;
+}
+
+.icon-caption.bottom {
+  bottom: -10px;
+}
+.hex.mid {
   margin: var(--tb-margin) var(--lr-margin);
 }
 
@@ -36,23 +63,15 @@
 @media (max-width: 780px) {
   :root{
     --base-size: 60px;
-  }
-  .hex {
-    font-size: 3rem;
-    .fa-linkedin-in {
-      font-size: 2.8rem;
-    }
+    --font-size-icons: 2.4rem;
   }
 }
 
 @media (max-width: 480px) {
   :root{
     --base-size: 40px;
-  }
-  .hex {
-    font-size: 2rem;
-    .fa-linkedin-in {
-      font-size: 1.6rem;
-    }
+    --font-size-icons: 1.8rem;
+    --font-size-captions: 0.8rem;
+
   }
 } 
