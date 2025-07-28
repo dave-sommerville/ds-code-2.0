@@ -1,6 +1,7 @@
 import {ProfileObject} from '../BLL/Profile.js';
 import Article from '../Components/PageWide/Article.js';
 import { motion } from 'framer-motion';
+import {Link} from 'react-router-dom';
 import '../css/article.css';
 
 function About() {
@@ -30,6 +31,9 @@ function About() {
           textContent={ProfileObject.paragraphThree}
           hexOption={""}
           />
+          <p className="about-contact">
+            <Link to="/contact" >Tell me what you think of my work here</Link>
+          </p>
       </section>
     </motion.div>
   );

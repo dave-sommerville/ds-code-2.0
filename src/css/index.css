@@ -167,7 +167,11 @@ main {
 }
 
 
-
+.about-contact {
+  font-size: var(--font-size-subtitle);
+  text-align: center;
+  cursor: pointer;
+}
 
 
 .marquee-container {

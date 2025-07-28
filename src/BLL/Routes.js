@@ -8,6 +8,8 @@ import Contact from '../Pages/Contact';
 import PageLayout from '../Layouts/PageLayout';
 import About from '../Pages/About';
 import PlayGround from '../Pages/PlayGround';
+import Releases from '../Pages/Releases';
+import Collaborations from '../Pages/Collaborations';
 
 export default function AppRoutes() {
   const location = useLocation();
@@ -32,6 +34,8 @@ export default function AppRoutes() {
         <Route path="/portfolio" element={<PageLayout><Portfolio /></PageLayout>} />
         <Route path="/contact" element={<PageLayout><Contact /></PageLayout>} />
         <Route path="/playground" element={<PageLayout><PlayGround /></PageLayout>} />
+        <Route path="/releases" element={<PageLayout><Releases /></PageLayout>} />
+        <Route path="/collaborations" element={<PageLayout><Collaborations /></PageLayout>} />
       </Routes>
     </AnimatePresence>
   );
