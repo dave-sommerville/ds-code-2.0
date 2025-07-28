@@ -3,15 +3,13 @@ import PdfPreview from './PdfPreview';
 
 function PdfPreviewGallery({ pdfLinks }) {
   return (
-    <div className="pdf-preview-gallery">
+    <ul className="pdf-preview-gallery raised-link">
       {pdfLinks.map((link, index) => (
-        <PdfPreview
-          key={index}
-          srcUrl={link.linkUrl}
-          title={link.linkTitle}
-        />
+        <li key={index}>
+          <a href={link.linkUrl}>{link.linkName}</a>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }
 

@@ -20,15 +20,15 @@
   }
 
   const learningCertificates = [
-    new Link("", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_Advanced%20Prompt%20Engineering%20Techniques.pdf#toolbar=0&navpanes=0"),
-    new Link("", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_Cert%20Prep%20Scrum%20Master.pdf#toolbar=0&navpanes=0"),
-    new Link("", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_Microsoft%20Power%20Platform%20Fundamentals%20PL900%20Exam%20Tips.pdf#toolbar=0&navpanes=0"),
-    new Link("", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_React%20Essential%20Training.pdf#toolbar=0&navpanes=0"),
-    new Link("", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_Scrum%20Advanced.pdf#toolbar=0&navpanes=0"),
-    new Link("", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_SEO%20Foundations.pdf#toolbar=0&navpanes=0"),
-    new Link("", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_Sharepoint%20Online%20Essential%20Training%20Beyond%20the%20Basics.pdf#toolbar=0&navpanes=0"),
-    new Link("", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_SharePoint%20Online%20Essential%20Training%20The%20Basics.pdf#toolbar=0&navpanes=0"),
-    new Link("", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_Web%20Accessibility%20for%20Developers.pdf#toolbar=0&navpanes=0")
+    new Link("Advanced AI Prompt Engineering Techniques", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_Advanced%20Prompt%20Engineering%20Techniques.pdf#toolbar=0&navpanes=0"),
+    new Link("Cert Prep: Scrum Master", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_Cert%20Prep%20Scrum%20Master.pdf#toolbar=0&navpanes=0"),
+    new Link("Microsoft Power Platform Fundamentals", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_Microsoft%20Power%20Platform%20Fundamentals%20PL900%20Exam%20Tips.pdf#toolbar=0&navpanes=0"),
+    new Link("React Essentials Training", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_React%20Essential%20Training.pdf#toolbar=0&navpanes=0"),
+    new Link("Scrum Advanced", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_Scrum%20Advanced.pdf#toolbar=0&navpanes=0"),
+    new Link("SEO Foundations", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_SEO%20Foundations.pdf#toolbar=0&navpanes=0"),
+    new Link("SharePoint Essential Training: Beyond the Basics", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_Sharepoint%20Online%20Essential%20Training%20Beyond%20the%20Basics.pdf#toolbar=0&navpanes=0"),
+    new Link("SharePoint Essential Training: The Basics", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_SharePoint%20Online%20Essential%20Training%20The%20Basics.pdf#toolbar=0&navpanes=0"),
+    new Link("Web Accessibility for Developers", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_Web%20Accessibility%20for%20Developers.pdf#toolbar=0&navpanes=0")
   ];
 
   export const ProfileObject = {

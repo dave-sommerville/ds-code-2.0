@@ -118,7 +118,12 @@ main {
 }
 .raised-link {
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 500;
+}
+.raised-link a {
+  color: var(--clr-light-blue);
 }
 .info-btn:not(.expanded):hover {
   transform: translateY(-4px);

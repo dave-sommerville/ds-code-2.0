@@ -1,9 +1,10 @@
 import DraggablePopup from "../HangMan/DraggableDiv";
+import PollForm from "./PollForm";
 
 function PollPopUp() {
   return(
     <DraggablePopup>
-      <div className="pop-up-ad"></div>
+      <PollForm></PollForm>
     </DraggablePopup>
   );
 }

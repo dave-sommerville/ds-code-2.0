@@ -6,7 +6,7 @@ import creefordReview from '../../media/img/reviews/creeford-linked-in-review.pn
 import gurpreetReview from '../../media/img/reviews/gurpreet-linked-in-review.png';
 import samReview from '../../media/img/reviews/sam-linked-in-review.png';
 import { ProfileObject } from '../../BLL/Profile';
-import PdfPreviewGallery from '../PageWide/PdfPreviewGallery';
+import ExperienceDisplayList from './ExperienceDisplayList';
 
 function SplashPageFeature() {
   const topLinks = [
@@ -56,7 +56,7 @@ function SplashPageFeature() {
                 <img src={creefordReview}></img>
               </li>
             </ul>
-            <a href={linkedInProfile} target="_blank" rel="noopener noreferrer" class="raised-link">Click Here</a>
+            <a href={linkedInProfile} target="_blank" rel="noopener noreferrer" class="raised-link">View my full LinkedIn here</a>
           </InfoButton>
 
           <InfoButton
@@ -75,7 +75,7 @@ function SplashPageFeature() {
             isActive={activeSection === 'Education'}
             onClick={() => handleExpand('Education')}
           >
-            <PdfPreviewGallery pdfLinks={ProfileObject.certfificates}></PdfPreviewGallery>
+            <ExperienceDisplayList experienceLinks={ProfileObject.certfificates}></ExperienceDisplayList>
           </InfoButton>
         </div>
 
