@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { hangingMan, getRandomPhrase } from './HangManData.js';
-import DraggablePopup from './DraggablePopup';
+import { hangingMan, getRandomPhrase } from '../HangMan/HangManData';
+import DraggablePopup from '../HangMan/DraggableDiv';
 import { FaXmark } from 'react-icons/fa6';
-import './Hangman.css';
+import '../../css/hangman.css';
 
 function HangManPopup({ isVisible, onClose }) {
   const [gameRunning, setGameRunning] = useState(false);
@@ -80,7 +80,7 @@ function HangManPopup({ isVisible, onClose }) {
           <p className={`game-title ${gameRunning ? '' : 'big-font'}`}>{message}</p>
           <p className="word-display">{display.join('')}</p>
           <div className="gallows-container">
-            <p className="gallows">{gallows}</p>
+            <pre className="gallows">{gallows}</pre>
           </div>
           <p className="wrong-letters">{wrongGuesses.join(', ')}</p>
 

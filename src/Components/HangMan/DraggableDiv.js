@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import '../../css/hangman.css';
 
-function DraggablePopup({ children, onClose }) {
+function DraggablePopup({ children, onClose, className = '' }) {
   const popupRef = useRef(null);
   const dragBarRef = useRef(null);
 
@@ -36,7 +36,7 @@ function DraggablePopup({ children, onClose }) {
   }, []);
 
   return (
-    <div className="pop-out" ref={popupRef}>
+    <div className={`pop-out ${className}`} ref={popupRef}>
       <div className="top-bar flex">
         <div className="drag-bar" ref={dragBarRef}></div>
         <div className="exit-game pointer" onClick={onClose}>

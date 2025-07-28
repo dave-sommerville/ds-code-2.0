@@ -1,5 +1,6 @@
 import GameConsole from '../Components/Other/GameConsole';
 import PollForm from '../Components/Other/PollForm';
+import PollPopUp from '../Components/Other/PollPopUp';
 import '../css/playground.css';
 import { motion } from 'framer-motion';
 
@@ -13,7 +14,7 @@ function PlayGround() {
     >
       <section className="playground">
        <GameConsole></GameConsole>
-       {/* <PollForm></PollForm> */}
+        <PollPopUp></PollPopUp>
       </section>
     </motion.div>
   );
