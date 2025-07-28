@@ -26,7 +26,7 @@
   --app-border-rad: 6px;
   --app-transition: all 0.3s ease-in-out;
   --app-box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  --small-font-size: 0.8rem;
+  --font-size-small: 0.8rem;
   --font-size-reg: 1.4rem;
   --font-size-subtitle: 3.4rem;
   --font-size-title: 5rem;
@@ -165,18 +165,19 @@ button {
   vertical-align: baseline;
   background-clip: padding-box;
   text-decoration: none;
-  cursor: pointer;
   margin: 0;
 
 }
 
 .btn {
+  height: fit-content;
+  width: fit-content;
   align-items: center;
   background-color: var(--clr-primary);
   border: 1px solid transparent;
   border-radius: var(--app-border-rad);
   box-shadow: var(--app-box-shadow);
-  padding: 5px 0;
+  padding: 5px;
   color: var(--clr-drk);
   font-size: var(--font-size-reg);
   font-weight: 600;
@@ -184,7 +185,7 @@ button {
   display: flex;
   position: relative;
   transition: var(--app-transition);
-  width: auto;
+  cursor: pointer;
   /* i {
     font-size: 1.4rem;
     width: 25px;

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { FaArrowRight, FaArrowLeft, FaArrowUpRightFromSquare } from 'react-icons/fa6';
+import { FaSquareCaretRight, FaSquareCaretLeft, FaArrowUpRightFromSquare } from 'react-icons/fa6';
 import '../../css/portfolio.css';
 
 function PortfolioFramework({ items }) {
@@ -34,7 +34,7 @@ function PortfolioFramework({ items }) {
 
   return (
     <div className="portfolio-framework">
-        <h3 className="info-title">{imageLoaded ? "Project Preview" : "Loading..."}</h3>
+        <h3 className="info-title">{imageLoaded ? "" : "Loading..."}</h3>
         {imageLoaded && (
           <img
             className="portfolio-preview"
@@ -53,13 +53,8 @@ function PortfolioFramework({ items }) {
         >
           <FaArrowUpRightFromSquare />
         </a>
-
-      <button className="arrow-btn left-btn btn" onClick={() => adjustIndex('-')}>
-        <FaArrowLeft />
-      </button>
-      <button className="arrow-btn right-btn btn" onClick={() => adjustIndex('+')}>
-        <FaArrowRight />
-      </button>
+        <FaSquareCaretLeft className="arrow-btn left-btn" onClick={() => adjustIndex('-')}/>
+        <FaSquareCaretRight className="arrow-btn right-btn" onClick={() => adjustIndex('+')} />
       </div>
   );
 }

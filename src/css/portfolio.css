@@ -10,7 +10,7 @@ a {
 
 .portfolio-wrapper {
   width: 100%;
-  height: 100svh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -38,14 +38,15 @@ a {
   cursor: pointer;
 }
 .portfolio-framework {
-  height: 650px;
   position: relative;
   transition: var(--app-transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .info-title {
   font-size: 2rem;
-  margin: 25px 0;
 }
 
 .portfolio-framework.fade-out {
@@ -63,48 +64,50 @@ a {
 }
 .portfolio-description {
   width: 400px;
-  font-size: 1.4rem;
+  font-size: var(--font-size-reg);
   margin-bottom: 25px;
+}
+.info-link {
+  font-size: var(--font-size-subtitle);
 }
 
 .left-btn, .right-btn {
   height: 60px;
   width: 60px;
   text-align: center;
-  bottom: 40svh;
+  top: 50%;
+  transform: translateY(-50%);
   justify-content: space-between;
   align-items: center;
   position: absolute;
+  font-size: var(--font-size-subtitle);
+  color: var(--clr-primary);
+  cursor: pointer;
 }
 .left-btn {
-  left: 8svw;
+  left: -100px;
 }
 .right-btn {
-  right: 8svw;
+  right: -100px;
 }
-@media (max-width: 830px) {
-  .portfolio-description {
-    font-size: 1.2rem;
-  }
-  .left-btn, .right-btn {
-    bottom: 0;
-  }
-  .left-btn {
-    left: 7svw;
-  }
-  .right-btn {
-    right: 7svw;
-  }
-  article.flex {
-    flex-direction: column;
-  }
+.hex-links {
+  display: flex;
+  margin-top: 100px;
 }
     
 @media (max-width: 600px) {
-
-  .portfolio-wrapper {
-    height: 550px;
+  .left-btn, .right-btn {
+    top: auto;
+    bottom: 0;
+    transform: translateY(0);
   }
+  .left-btn {
+  left: 0;
+}
+.right-btn {
+  right: 0px;
+}
+
 }
 @media (max-width: 480px) {
   .portfolio-preview {
@@ -113,6 +116,7 @@ a {
   }
   .portfolio-description {
     width: 370px;
+    margin-bottom: 50px;
   }
   
 }

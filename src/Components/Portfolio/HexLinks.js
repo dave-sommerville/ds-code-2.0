@@ -4,7 +4,7 @@ import '../../css/social-media-hexes.css';
 
 function HexLinks() {
     return (
-    <div className="flex">
+    <div className="hex-links">
       <Link
         to="/releases"
         className="pos-rel"

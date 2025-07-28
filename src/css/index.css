@@ -143,7 +143,9 @@ main {
   width: 500px;
   border-radius: var(--app-border-rad);
 }
-
+.info-icon {
+  margin-left: 10px;
+}
 .splash-link {
   display: flex;
   align-items: center;

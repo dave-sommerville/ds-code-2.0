@@ -28,10 +28,10 @@
   border-top: solid 40px #6700dd29;
   border-right: solid 40px #6700dd13;
   border-left: solid 40px #6700dd13;
-background-clip: padding-box;
+  background-clip: padding-box;
 }
+
 .icon-wrapper {
-  height: 100%;
   max-width: 300px;
   display: flex;
   flex-wrap: wrap;
@@ -39,19 +39,19 @@ background-clip: padding-box;
 }
 .game-intro {
   height: fit-content;
-  width: 50%;
   background-color: var(--clr-bg);
   border: solid 2px var(--clr-primary);
   color: var(--clr-light);
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-reg);
   font-family: "Kode Mono";
+  text-align: center;
   margin: var(--app-spacing);
 }
 
 .game-intro h3 {
   text-align: center;
-  margin: 0;
-  font-size: var(--font-size-reg);
+  margin: var(--app-spacing) 0;
+  font-size: 2rem;
 }
 
 .game-console figcaption {

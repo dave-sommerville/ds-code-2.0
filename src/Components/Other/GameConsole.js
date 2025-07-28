@@ -3,13 +3,16 @@ import scriptIcon from '../../media/img/icons/desert.png';
 import codeIcon from '../../media/img/icons/terminal.png';
 import boogleIcon from '../../media/img/icons/boggle.png';
 import hangmanIcon from '../../media/img/icons/hangman.png';
+import { FaCircleInfo } from 'react-icons/fa6';
+
 import '../../css/hangman.css';
 function GameConsole() {
   return(
     <div className="game-console">
-      <div className="game-intro">
-        <h3>THE ARCADE(i)</h3>
-      </div>
+      <h3 className="game-intro">
+        THE ARCADE
+        <FaCircleInfo className="info-icon"/>
+      </h3>
       <div className="icon-wrapper">
         <a 
           href="" 
