@@ -8,7 +8,7 @@ function App() {
   return(
     <>
       <ScrollToTop></ScrollToTop>
-      <AppRoutes />;
+      <AppRoutes />
     </>
   );
 }

@@ -26,9 +26,6 @@ article p {
   max-width: 500px;
 }
 
-figure {
-
-}
 .about-image:not(.about-hex) {
   height: 200px;
 }
@@ -44,7 +41,9 @@ figure {
   .article-container > article:nth-child(odd) {
     flex-direction: column;
   }
-
+  .article-container > article:nth-child(even) {
+  flex-direction: column;
+  }
 }
 
 @media(max-width: 480px) {
