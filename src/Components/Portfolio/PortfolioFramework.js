@@ -6,14 +6,25 @@ function PortfolioFramework({ items }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [imageLoaded, setImageLoaded] = useState(false);
 
-  useEffect(() => {
-    if (!items || !items.length) return;
+useEffect(() => {
+  if (!items || !items.length) return;
 
-    setImageLoaded(false);
-    const img = new Image();
-    img.src = items[currentIndex].imgUrl;
-    img.onload = () => setImageLoaded(true);
-  }, [items, currentIndex]);
+  // Clamp the currentIndex to stay in bounds after items change
+  setCurrentIndex((prev) => {
+    if (prev >= items.length) return 0;
+    return prev;
+  });
+
+  // Only load image if currentItem is valid
+  const currentItem = items[currentIndex];
+  if (!currentItem) return;
+
+  setImageLoaded(false);
+  const img = new Image();
+  img.src = currentItem.imgUrl;
+  img.onload = () => setImageLoaded(true);
+}, [items, currentIndex]);
+
 
   const adjustIndex = (operator) => {
     setCurrentIndex((prevIndex) => {

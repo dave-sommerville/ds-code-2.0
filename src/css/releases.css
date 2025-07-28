@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+.releases-wrapper {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+.releases-wrapper h2 {
+  font-size: var(--font-size-subtitle);
+  color: var(--clr-light);
+}
