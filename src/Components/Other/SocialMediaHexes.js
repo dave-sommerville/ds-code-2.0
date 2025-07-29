@@ -1,16 +1,16 @@
 import React from 'react';
 import { FaMastodon, FaLinkedin, FaGithub, FaYoutube } from 'react-icons/fa6';
-import '../../css/social-media-hexes.css';
+import '../../css/hex-style.css';
 
 function SocialMediaHexes() {
   return (
-    <div className="flex">
+    <div className="hex-links">
       <a
         href=""
         target="_blank"
         rel="noopener noreferrer"
       >
-        <div className="hex image-hover">
+        <div className="hex">
           <FaYoutube className="hex-icon"/>
         </div>
       </a>
@@ -20,7 +20,7 @@ function SocialMediaHexes() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <div className="mid hex image-hover">
+        <div className="mid hex">
           <FaLinkedin className="hex-icon"/>
         </div>
       </a>
@@ -30,7 +30,7 @@ function SocialMediaHexes() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <div className="hex image-hover pointer flex">
+        <div className="hex">
           <FaGithub className="hex-icon"/>
         </div>
       </a>

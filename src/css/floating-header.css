@@ -26,7 +26,7 @@
   color: var(--clr-primary);
 }
 
-.orange-text {
+.logo-hex {
   transition: var(--app-transition);
   background-color: var(--clr-primary);
   color: var(--clr-drk);
@@ -70,13 +70,16 @@
   text-decoration: none;
   color: var(--clr-dark);
   font-weight: 600;
+  transition: var(--app-transition);
 }
 
 .nav-links li a.active {
   color: var(--clr-dark);
   border-bottom: 2px solid var(--clr-accent, #ff6600);
 }
-
+.nav-links li a:hover {
+  color: var(--clr-light-blue);
+}
 
 @media (max-width: 768px) {
   .burger {

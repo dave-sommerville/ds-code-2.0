@@ -17,11 +17,7 @@
 .m-auto {
   margin: -25px auto;
 }
-.hex-parent {
-  display: flex;
-  position: relative;
 
-}
 .hex {
   clip-path: var(--app-clip-hex);
   width: var(--base-size);
@@ -35,10 +31,22 @@
   cursor: pointer;
   position: relative;
   z-index: 1;
+  transition: var(--app-transition);
 }
+.hex:hover {
+  transform: translateY(-3px);
+}
+.hex.mid {
+  margin: var(--tb-margin) var(--lr-margin);
+}
+.hex-links {
+  display: flex;
+}
+
 .hex-icon {
   font-size: var(--font-size-icons);
 }
+
 .icon-caption {
   position: absolute;
   left: 50%;
@@ -55,9 +63,7 @@
 .icon-caption.bottom {
   bottom: -10px;
 }
-.hex.mid {
-  margin: var(--tb-margin) var(--lr-margin);
-}
+
 
 
 @media (max-width: 780px) {
@@ -72,6 +78,5 @@
     --base-size: 40px;
     --font-size-icons: 1.8rem;
     --font-size-captions: 0.8rem;
-
   }
 } 

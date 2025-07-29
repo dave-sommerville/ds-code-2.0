@@ -90,10 +90,7 @@ a {
 .right-btn {
   right: -100px;
 }
-.hex-links {
-  display: flex;
-  margin-top: 100px;
-}
+
     
 @media (max-width: 600px) {
   .left-btn, .right-btn {

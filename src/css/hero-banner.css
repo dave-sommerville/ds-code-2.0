@@ -10,7 +10,7 @@ header {
   position: relative;
   overflow: hidden;
   align-items: center;
-  color: var(--clr-light);
+  color: var(--clr-light-blue);
 }
 
 /* h1,h2,h3,h4 {
@@ -73,10 +73,7 @@ h4 {
     text-align: center;
   }
 }
-.btn.secondary {
-  background-color: var(--clr-drk);
-  color: var(--clr-light);
-}
+
 .parallax {
   position: fixed;
   pointer-events: none;
@@ -137,4 +134,8 @@ h4 {
   background-image: url("../media/img/hexagon-dark.svg");
   z-index: 150;
 }
-
+@media(max-width: 900px) {
+  .small-solid-orange-hex-one, .med-orange-hex-one {
+    display: none;
+  }
+}

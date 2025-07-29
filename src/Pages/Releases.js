@@ -36,12 +36,12 @@ function Releases() {
             </a>
           </div>
           <figure>
-            <img src="./src/img/dungeongif.gif" className="eyeframe" alt="Dungeons of Draegmor preview" />
+            <img src="https://dave-sommerville.github.io/ds-code-releases/img/dungeongif.gif" className="eyeframe" alt="Dungeons of Draegmor preview" />
           </figure>
         </article>
         <article className="flex">
           <figure>
-            <img src="./src/img/blackjackgif.gif" className="eyeframe" alt="Blackjack animation preview" />
+            <img src="https://dave-sommerville.github.io/ds-code-releases/img/blackjackgif.gif" className="eyeframe" alt="Blackjack animation preview" />
           </figure>
           <div className="release-text f-col">
             <h4>The Deck</h4>

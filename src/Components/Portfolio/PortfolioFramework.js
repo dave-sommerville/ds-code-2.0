@@ -64,8 +64,8 @@ useEffect(() => {
         >
           <FaArrowUpRightFromSquare />
         </a>
-        <FaSquareCaretLeft className="arrow-btn left-btn" onClick={() => adjustIndex('-')}/>
-        <FaSquareCaretRight className="arrow-btn right-btn" onClick={() => adjustIndex('+')} />
+        <FaSquareCaretLeft className="arrow-btn left-btn icon-hover" onClick={() => adjustIndex('-')}/>
+        <FaSquareCaretRight className="arrow-btn right-btn icon-hover" onClick={() => adjustIndex('+')} />
       </div>
   );
 }

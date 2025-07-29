@@ -1,7 +1,4 @@
 @charset "utf-8";
-/*
-  - Add functionality and  Home/About/Contact/Portfolio 
-*/
 body {
   margin: 0;
   font-family: "Space Grotesk", "IBM Mono Plex", monospace;
@@ -52,6 +49,11 @@ main {
   font-size: var(--font-size-subtitle);
   margin: 0;
 }
+/*------------------------------------------------------------->
+
+<-------------------------------------------------------------*/
+
+
 .home-page {
   min-height: 100svh;
   display: flex;
@@ -59,7 +61,7 @@ main {
   align-items: center;
 }
 
-.splash-wrapper {
+.splash-btn-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,9 +69,10 @@ main {
   background: var(--clr-blur-bg);
   backdrop-filter: blur(10px);
   border-radius: var(--app-border-rad);
+
 }
 
-.splash-column {
+.splash-item-wrapper {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -87,13 +90,7 @@ main {
   font-size: var(--font-size-subtitle);
 }
 
-.splash-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
-}
-.splash-wrapper {
-  margin-bottom: 0; /* just in case */
-}
+
 
 .splash-info-btn-wrapper {
   height: fit-content;
@@ -104,6 +101,7 @@ main {
 .splash-info-btn-wrapper.open {
   gap: 0;
 }
+
 .info-btn {
   flex: 1;
   height: 80px;
@@ -116,20 +114,27 @@ main {
   position: relative;
   z-index: 100;
 }
+
 .raised-link {
+  text-align: center;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   z-index: 500;
-}
-.raised-link a {
+  transition: var(--app-transition);
   color: var(--clr-light-blue);
 }
-.info-btn:not(.expanded):hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+.raised-link a{
+  transition: var(--app-transition);
 }
-
+.splash-item:hover,
+.info-btn:not(.expanded):hover {
+  transform: translateY(-3px);
+  box-shadow: var(--app-box-shadow-raised);
+}
+.raised-link:hover, .raised-link a:hover {
+  color: var(--clr-primary);
+}
 .info-btn.expanded {
   flex: 1;
   height: 1000px;
@@ -151,6 +156,7 @@ main {
 .info-icon {
   margin-left: 10px;
 }
+
 .splash-link {
   display: flex;
   align-items: center;
@@ -167,12 +173,24 @@ main {
 }
 
 
+
+
+
+
+
+
 .about-contact {
   font-size: var(--font-size-subtitle);
   text-align: center;
   cursor: pointer;
 }
-
+.about-contact a {
+  color: var(--clr-light-blue);
+  transition: var(--app-transition);
+}
+.about-contact a:hover {
+  color: var(--clr-primary);
+}
 
 .marquee-container {
   width: 100%;

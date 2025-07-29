@@ -1,6 +1,5 @@
 @charset "utf-8";
 .article-container {
-  color: var(--clr-light);
   padding-top: 80px;
 }
 
@@ -8,13 +7,13 @@
   flex-direction: row-reverse;
 }
 
-article {
+.article-container article {
   width: 100%;
   height: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  color: var(--clr-light);
+  color: var(--clr-light-blue);
   font-size: var(--font-size-reg);
   padding: var(--app-spacing);
   margin-bottom: var(--app-spacing);
@@ -22,7 +21,7 @@ article {
   gap: var(--app-spacing);
 }
 
-article p {
+.article-container article p {
   max-width: 500px;
 }
 

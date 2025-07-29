@@ -25,8 +25,8 @@ function SplashPageFeature() {
 
   return (
     <section className="home-page">
-      <div className="splash-wrapper">
-        <div className="splash-column">
+      <div className="splash-btn-wrapper">
+        <div className="splash-item-wrapper">
           {topLinks.map((link) => (
             <div key={link.to} className="splash-item">
               <Link to={link.to} className="splash-link">
