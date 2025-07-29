@@ -1,8 +1,8 @@
 import React from 'react';
 import '../../css/forms.css';
-function PollForm() {
+function PollForm({classChoice}) {
   return (
-    <form name="poll" method="POST" data-netlify="true" className="poll-social">
+    <form name="poll" method="POST" data-netlify="true" className={classChoice}>
       <h5>What game should I create next?</h5>
 
       {/* Hidden input for Netlify form handling */}

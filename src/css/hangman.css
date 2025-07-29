@@ -75,6 +75,13 @@
 .big-font {
   font-size: 5rem;
 }
+.retro-poll {
+  padding: var(--app-spacing);
+}
+.retro-poll .btn {
+  background-color: #10103b;
+  color: var(--clr-primary);
+}
 
 @media (max-width: 480px) {
   .pop-out {

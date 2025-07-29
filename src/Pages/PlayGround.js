@@ -14,7 +14,6 @@ function PlayGround() {
     >
       <section className="playground">
        <GameConsole></GameConsole>
-        <PollPopUp></PollPopUp>
       </section>
     </motion.div>
   );

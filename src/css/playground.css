@@ -28,6 +28,7 @@
   border-top: solid 40px #6700dd29;
   border-right: solid 40px #6700dd13;
   border-left: solid 40px #6700dd13;
+  outline: 1px solid #456;
   background-clip: padding-box;
 }
 
