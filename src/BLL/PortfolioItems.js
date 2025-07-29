@@ -46,29 +46,28 @@
   const blackjack = new Portfolio(
     "https://dave-sommerville.github.io/ds-code-releases/img/blackjack-preview-start.jpg", // https://dave-sommerville.github.io/ds-code-releases/img/blackjack-preview-play.jpg
     "Blackjack", 
-    "My online version of Blackjack, featuring deal animations and a persistant player bank.", 
+    "Blackjack, featuring deal animations and a persistant player bank.", 
     "https://dave-sommerville.github.io/blackjack/",
     ["Featured","Game", "Large-scale"]
   );
   const scriptScavengers = new Portfolio(
     "https://dave-sommerville.github.io/ds-code-releases/img/script-scavengers-preview-start.jpg", // https://dave-sommerville.github.io/ds-code-releases/img/script-scavengers-preview-play.jpg
     "Script Scavengers", 
-    "Fast typing game with a desert scavenger theme. Including a highscore list.", 
+    "Fast typing game with a desert scavenger theme.", 
     "https://dave-sommerville.github.io/script-scavengers/",
     ["Featured","Game"]
   );
   const codeBreaker = new Portfolio(
     "https://dave-sommerville.github.io/ds-code-releases/img/code-breaker-preview.jpg",
     "Code Breaker",
-    "Based on the game Mastermind, players can test their logical deducation skills and track their times.", 
+    "Logical deducation game with timer and highscore.", 
     "https://dave-sommerville.github.io/code-breaker/",
     ["Game"]
   );
   const booogle = new Portfolio(
     "https://dave-sommerville.github.io/ds-code-releases/img/boogle-preview.jpg",
     "Booogle", 
-    "A handy online Boggle display for large groups or travelling."
-    + "Letter probabilities reflect the physical version.", 
+    "A handy online Boggle display for large groups or travelling.", 
     "https://dave-sommerville.github.io/boogle/",
     ["Game"]
   );
@@ -143,16 +142,16 @@
     ["Full stack","Social media"]
   );
   const potionPortal = new Portfolio(
-    "https://dave-sommerville.github.io/ds-code-releases/img/dungeon-crawler-preview.jpg", 
+    "https://dave-sommerville.github.io/ds-code-releases/img/potion-portal-preview.gif", 
     "Pixie Pearl's Potion Portal", 
-    "Windows desktop app to manage see the effects of a variety of potions", 
+    "Winforms app to manage see the effects of a variety of potions", 
     "https://dave-sommerville.github.io/ds-code-releases/dungeons-of-draegmor",
     ["Game","Full stack", "Featured"]
   );
   const dungeonCrawler = new Portfolio(
-    "https://dave-sommerville.github.io/ds-code-releases/img/potion-portal-preview.gif", 
+    "https://dave-sommerville.github.io/ds-code-releases/img/dungeon-crawler-preview.jpg", 
     "Dungeons of Draegmor", 
-    "A text based console RPG game, with random generation and sandbox playstyle", 
+    "A text based console sandbox RPG dungeon crawler", 
     "https://github.com/dave-sommerville/pixie-potion-brewery",
     ["Console app","Game", "Featured"]
   );

@@ -17,7 +17,6 @@ a {
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding-top: 80px;
   color: var(--clr-light);
   transition: var(--app-transition);
 }
@@ -38,6 +37,7 @@ a {
   cursor: pointer;
 }
 .portfolio-framework {
+  height: 500px;
   position: relative;
   transition: var(--app-transition);
   display: flex;

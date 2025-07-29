@@ -30,7 +30,8 @@
 }
 .about-hex {
   clip-path: var(--app-clip-hex);
-  height: 200px;
+  width: 390px;
+  aspect-ratio: 1/1;
 }
 
 @media(max-width: 900px) {

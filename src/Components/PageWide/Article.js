@@ -1,8 +1,8 @@
 function Article({imgUrl, imageName, textContent, hexOption}) {
   return(
     <article>
-      <figure className={hexOption}>
-        <img src={imgUrl} alt={imageName} className="about-image"></img>
+      <figure>
+        <img src={imgUrl} alt={imageName} className={`about-image ` + hexOption}></img>
       </figure>
       <p>
         {textContent}
