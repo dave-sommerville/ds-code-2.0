@@ -21,6 +21,16 @@ a:not([class]){
     text-decoration-skip-ink: auto; 
 }
 
+button {
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  background-clip: padding-box;
+  text-decoration: none;
+  margin: 0;
+}
+
 img, picture, svg, video, canvas{
     max-width: 100%;
     height: auto; 

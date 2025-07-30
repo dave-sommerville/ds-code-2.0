@@ -53,7 +53,7 @@ export default function HeroBanner({ setHeroHeight }) {
   }, []);
 
   return (
-    <header ref={bannerRef} id="page-top" className="f-col">
+    <header ref={bannerRef} id="page-top" className="f-col no-select">
       <img src={honeyComb} className="hero-banner" alt="hero background" />
       <h1 className="z100"><span>D</span>AVE <span>S</span>OMMERVILLE</h1>
       <h2 className="z100">CODE</h2>

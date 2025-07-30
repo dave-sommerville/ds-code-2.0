@@ -33,7 +33,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="footer-bottom">
+      <div className="footer-bottom no-select">
         <p>Dave Sommerville © 2025 DS Code</p>
         <div className="social-icons">
           <a href="mailto:dave.r.sommerville@outlook.com">

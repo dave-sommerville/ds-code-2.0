@@ -18,6 +18,11 @@
       return this.#linkUrl;
     }
   }
+  export const collaboratorList = [
+    new Link("Gurpreet", "https://github.com"),
+    new Link("Sam", "https://github.com"),
+    new Link("Myles", "https://github.com")
+  ];
 
   const learningCertificates = [
     new Link("Advanced AI Prompt Engineering Techniques", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_Advanced%20Prompt%20Engineering%20Techniques.pdf#toolbar=0&navpanes=0"),

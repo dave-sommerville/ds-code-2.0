@@ -7,6 +7,7 @@ import gurpreetReview from '../../media/img/reviews/gurpreet-linked-in-review.pn
 import samReview from '../../media/img/reviews/sam-linked-in-review.png';
 import { ProfileObject } from '../../BLL/Profile';
 import ExperienceDisplayList from './ExperienceDisplayList';
+import MarqueeText from '../Other/MarqueeText';
 
 function SplashPageFeature() {
   const topLinks = [
@@ -18,7 +19,6 @@ function SplashPageFeature() {
   const [activeSection, setActiveSection] = useState(null);
   const isAnyExpanded = activeSection !== null;
   const linkedInProfile = ProfileObject.linkedIn.linkUrl;
-  console.log(linkedInProfile);
   const handleExpand = (section) => {
     setActiveSection(prev => (prev === section ? null : section));
   };
@@ -47,13 +47,13 @@ function SplashPageFeature() {
                 <img src={gurpreetReview}></img>
               </li>
               <li>
-                <img src={samReview}></img>
+                <img src={creefordReview}></img>
               </li>
               <li>
                 <img src={andreReview}></img>
               </li>
               <li>
-                <img src={creefordReview}></img>
+                <img src={samReview}></img>
               </li>
             </ul>
             <a href={linkedInProfile} target="_blank" rel="noopener noreferrer" class="raised-link">View my full LinkedIn here</a>
@@ -64,10 +64,14 @@ function SplashPageFeature() {
             isActive={activeSection === 'Experience'}
             onClick={() => handleExpand('Experience')}
           >
-            <div className="experience-gallery">
-              <img src="/images/project1.png" alt="Project 1" />
-              <img src="/images/project2.png" alt="Project 2" />
-            </div>
+            <ul className="experience-list">
+              <li>1 Year Programming</li>
+              <li>5 Years Management</li>
+              <li>10 Years Administrative</li>
+              <li>Skills</li>
+              <li>Languages</li>
+        <MarqueeText text="Welcome to my world of code • Inspired by curiosity • Driven by coffee ☕ • Always learning •" />
+            </ul>
           </InfoButton>
 
           <InfoButton
@@ -79,7 +83,6 @@ function SplashPageFeature() {
           </InfoButton>
         </div>
 
-        {/* <MarqueeText text="Welcome to my world of code • Inspired by curiosity • Driven by coffee ☕ • Always learning •" /> */}
       </div>
     </section>
   );

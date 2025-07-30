@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FaSquareCaretRight, FaSquareCaretLeft, FaArrowUpRightFromSquare } from 'react-icons/fa6';
+import {Link} from 'react-router-dom';
 import '../../css/portfolio.css';
 
 function PortfolioFramework({ items }) {
@@ -55,6 +56,18 @@ useEffect(() => {
         )}
         <h4 className="portfolio-title">{currentItem.title}</h4>
         <p className="portfolio-description">{currentItem.description}</p>
+{currentItem.collaborators && currentItem.collaborators.length > 0 && (
+  <Link to={`/collaborators`} className="collaborators-list-link">
+    <div className="collaborators-list">
+      <small>Collaborators:</small>
+      <ul>
+        {currentItem.collaborators.map((collaborator, index) => (
+          <li key={index}>{collaborator}</li>
+        ))}
+      </ul>
+    </div>
+  </Link>
+)}
         <a
           href={currentItem.linkUrl}
           className="btn info-link"

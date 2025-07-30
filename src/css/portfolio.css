@@ -70,6 +70,27 @@ a {
 .info-link {
   font-size: var(--font-size-subtitle);
 }
+.collaborators-list {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: var(--clr-light);
+  opacity: 0.75;
+}
+
+.collaborators-list ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.collaborators-list li a {
+  color: lightblue;
+  text-decoration: underline;
+  font-size: 0.85rem;
+}
 
 .left-btn, .right-btn {
   height: 60px;

@@ -1,6 +1,7 @@
 // App.jsx
 import './css/index.css';
 import './css/utils.css';
+import './css/reset.css';
 import AppRoutes from './BLL/Routes';
 import ScrollToTop from './BLL/ScrollToTop';
 
