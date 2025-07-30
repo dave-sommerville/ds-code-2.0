@@ -32,6 +32,7 @@ a {
   border-radius: var(--app-border-rad);
   background-color: var(--clr-light-blue);
   cursor: pointer;
+  margin-bottom: var(--app-spacing);
 }
 .category-select:active {
   cursor: pointer;
@@ -40,6 +41,12 @@ a {
   height: 500px;
   position: relative;
   transition: var(--app-transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio-form {
+  height: 55svh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,6 +76,10 @@ a {
 }
 .info-link {
   font-size: var(--font-size-subtitle);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .collaborators-list {
   font-size: 0.9rem;

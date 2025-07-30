@@ -56,18 +56,17 @@ useEffect(() => {
         )}
         <h4 className="portfolio-title">{currentItem.title}</h4>
         <p className="portfolio-description">{currentItem.description}</p>
-{currentItem.collaborators && currentItem.collaborators.length > 0 && (
-  <Link to={`/collaborators`} className="collaborators-list-link">
-    <div className="collaborators-list">
-      <small>Collaborators:</small>
-      <ul>
-        {currentItem.collaborators.map((collaborator, index) => (
-          <li key={index}>{collaborator}</li>
-        ))}
-      </ul>
-    </div>
-  </Link>
-)}
+        {currentItem.collaborators && currentItem.collaborators.length > 0 && (
+          <Link to={`/collaborators`} className="collaborators-list-link">
+            <div className="collaborators-list">
+              <ul>
+                {currentItem.collaborators.map((collaborator, index) => (
+                  <li key={index}>{collaborator}</li>
+                ))}
+              </ul>
+            </div>
+          </Link>
+        )}
         <a
           href={currentItem.linkUrl}
           className="btn info-link"

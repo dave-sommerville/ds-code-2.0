@@ -1,29 +1,52 @@
 @charset "utf-8";
 
+.orange-text {
+  color: var(--clr-primary);
+}
+
 .releases-wrapper {
   min-height: 100svh;
+  font-family: "Kode Mono";
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 100px;
   text-align: center;
-  gap: var(--app-spacing);
 }
 .releases-wrapper h2 {
   font-size: var(--font-size-subtitle);
-  color: var(--clr-light-blue);
+  color: var(--clr-green);
 }
-
+.releases-wrapper a {
+  color: var(--clr-green);
+}
 .releases-wrapper article {
   width: 700px;
   display: flex;
   justify-content: space-between;
-  color: var(--clr-light-blue);
+  color: var(--clr-green);
   font-size: var(--font-size-reg);
+  background-color: #001;
+  padding: var(--app-spacing);
+  margin: var(--app-spacing);
 }
 
-.release-text {
+.release-text:not(.w-100) {
   width: 400px;
   text-align: center;
+}
+.release-text h4 {
+  margin: 5 0;
+  font-size: var(--font-size-subtitle);
+}
+.release-text p {
+  font-size: var(--font-size-reg);
+  margin-bottom: 5px;
+}
+.release-text a {
+  transition: var(--app-transition);
+}
+.release-text a:hover {
+  color: var(--clr-primary);
 }
