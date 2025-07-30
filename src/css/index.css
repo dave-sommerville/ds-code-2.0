@@ -142,14 +142,27 @@ main {
 }
 .info-btn.expanded {
   flex: 1;
-  height: 1000px;
+  height: 700px;
 }
 
 .open > *:not(.expanded) {
   flex: 0;
 }
-
-
+.small-title {
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-top: var(--app-spacing);
+}
+@media(max-width: 800px) {
+  .small-title {
+    font-size: 1.4rem;
+  }
+}
+@media(max-width: 500px){
+  .small-title{
+    font-size: 1.2rem;
+  }
+}
 .reviews-list {
   display: flex;
   flex-direction: column;
@@ -202,13 +215,19 @@ main {
   color: var(--clr-primary);
 }
 
+.info-expander-inline {
+  padding: var(--app-spacing);
+}
+.info-expander-inline p {
+  margin-bottom: var(--app-spacing);
+}
+
 .marquee-container {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
   background: var(--clr-drk);
   padding: 1rem 0;
-  margin-top: 2rem;
   position: relative;
 }
 
@@ -217,7 +236,7 @@ main {
   white-space: nowrap;
   animation: scroll-left 30s linear infinite; 
   font-weight: bold;
-  color: lightgreen;
+  color: var(--clr-green);
 }
 
 .marquee-content {

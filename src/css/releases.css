@@ -7,8 +7,23 @@
   justify-content: center;
   align-items: center;
   padding-top: 100px;
+  text-align: center;
+  gap: var(--app-spacing);
 }
 .releases-wrapper h2 {
   font-size: var(--font-size-subtitle);
-  color: var(--clr-light);
+  color: var(--clr-light-blue);
+}
+
+.releases-wrapper article {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--clr-light-blue);
+  font-size: var(--font-size-reg);
+}
+
+.release-text {
+  width: 400px;
+  text-align: center;
 }

@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from 'react';
+import { FaXmark } from 'react-icons/fa6';
 import '../../css/hangman.css';
 
-function DraggablePopup({ children, onClose, className = '' }) {
+function DraggablePopup({ children, onClose, barText, className = '' }) {
   const popupRef = useRef(null);
   const dragBarRef = useRef(null);
 
@@ -38,9 +39,9 @@ function DraggablePopup({ children, onClose, className = '' }) {
   return (
     <div className={`pop-out ${className}`} ref={popupRef}>
       <div className="top-bar flex">
-        <div className="drag-bar" ref={dragBarRef}></div>
+        <div className="drag-bar" ref={dragBarRef}>{barText}</div>
         <div className="exit-game pointer" onClick={onClose}>
-          &times;
+          <FaXmark></FaXmark>
         </div>
       </div>
       {children}

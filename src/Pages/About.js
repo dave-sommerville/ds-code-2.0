@@ -32,7 +32,7 @@ function About() {
           hexOption={""}
           />
           <p className="about-contact">
-            <Link to="/contact" >Tell me what you think of my work here</Link>
+            <Link to="/contact" >Tell me what you think of my work</Link>
           </p>
       </section>
     </motion.div>

@@ -39,27 +39,52 @@
   color: var(--clr-bg);
 }
 .game-intro {
-  height: fit-content;
-  background-color: var(--clr-bg);
-  border: solid 2px var(--clr-primary);
-  color: var(--clr-light);
+  color: var(--clr-drk);
   font-size: var(--font-size-reg);
   font-family: "Kode Mono";
   text-align: center;
-  margin: var(--app-spacing);
 }
 
-.game-intro h3 {
-  text-align: center;
-  margin: var(--app-spacing) 0;
-  font-size: 2rem;
+.game-icon {
+  margin: var(--app-spacing);
+  cursor: pointer;
+  transition: var(--app-transition);
+}
+
+.flex-end{
+  align-self: flex-end;
+}
+.game-icon:hover {
+  filter: brightness(1.2) opacity(0.9);
 }
 
 .game-console figcaption {
   font-size: 0.8rem;
+  width: var(--app-icon-size);
   color: var(--clr-drk);
   text-align: center;
 }
 .game-console img {
   width: var(--app-icon-size);
 }
+
+.shake-me {
+  animation: subtleShake 1.5s infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: calc(0.2s * var(--random-delay, 1));
+}
+
+@keyframes subtleShake {
+  0%   { transform: translate(0px, 0px) rotate(0deg); }
+  10%  { transform: translate(-1px, 1px) rotate(-0.5deg); }
+  20%  { transform: translate(1px, -1px) rotate(0.5deg); }
+  30%  { transform: translate(-0.5px, 0.5px) rotate(-0.3deg); }
+  40%  { transform: translate(0.5px, -0.5px) rotate(0.3deg); }
+  50%  { transform: translate(-1px, 1px) rotate(0deg); }
+  60%  { transform: translate(1px, -0.5px) rotate(0.5deg); }
+  70%  { transform: translate(-0.5px, 0.5px) rotate(-0.5deg); }
+  80%  { transform: translate(1px, -1px) rotate(0.3deg); }
+  90%  { transform: translate(-1px, 1px) rotate(-0.3deg); }
+  100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+

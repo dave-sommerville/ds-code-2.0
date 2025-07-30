@@ -64,13 +64,19 @@ function SplashPageFeature() {
             isActive={activeSection === 'Experience'}
             onClick={() => handleExpand('Experience')}
           >
+            <p>
+              I have robust experience from a variety of fields,
+              each impacting me in a valuable way. My experience includes:
+            </p>
             <ul className="experience-list">
               <li>1 Year Programming</li>
               <li>5 Years Management</li>
               <li>10 Years Administrative</li>
-              <li>Skills</li>
-              <li>Languages</li>
-        <MarqueeText text="Welcome to my world of code • Inspired by curiosity • Driven by coffee ☕ • Always learning •" />
+              <li className="small-title">Skills</li>
+              <li>Technical</li>
+        <MarqueeText text=" HTML | CSS | JavaScript | C# | React | SQL | Php | Git | node.js | " />
+              <li>Soft</li>
+        <MarqueeText text=" HTML | CSS | JavaScript | C# | React | SQL | Php | Git | node.js | " />
             </ul>
           </InfoButton>
 

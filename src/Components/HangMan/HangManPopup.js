@@ -4,7 +4,7 @@ import DraggablePopup from '../HangMan/DraggableDiv';
 import { FaXmark } from 'react-icons/fa6';
 import '../../css/hangman.css';
 
-function HangManPopup({ isVisible, onClose }) {
+function HangManPopup({ isVisible, onClose, barText }) {
   const [gameRunning, setGameRunning] = useState(false);
   const [phrase, setPhrase] = useState('');
   const [display, setDisplay] = useState([]);
@@ -74,7 +74,7 @@ function HangManPopup({ isVisible, onClose }) {
   if (!isVisible) return null;
 
   return (
-    <DraggablePopup onClose={onClose}>
+    <DraggablePopup barText={barText} onClose={onClose}>
       <div className="hangman-display f-col">
         <div className="game-wrapper f-col">
           <p className={`game-title ${gameRunning ? '' : 'big-font'}`}>{message}</p>
@@ -91,7 +91,7 @@ function HangManPopup({ isVisible, onClose }) {
           />
 
           <button
-            className="hangman-start pointer hover"
+            className={`hangman-start btn ${gameRunning ? 'hidden' : ''}`}
             onClick={startGame}
           >
             Start

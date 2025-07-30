@@ -26,11 +26,16 @@
 
 .poll-option {
   display: block;
-  height: 30px;
   font-size: var(--app-font-size-reg);
   text-align: center;
   border: 1px solid #ccc;
+  background-color: rgba(0, 17, 34, 0.171);
   transition: var(--app-transition);
+  padding: 5px 0;
+  cursor: pointer;
+}
+.poll-option:hover {
+  border: 1px solid var(--clr-primary);
 }
 
 .poll-option input[type="radio"] {
@@ -79,7 +84,7 @@ h5 {
 }
 .contact textarea {
   width: 100%;
-  height: 40svh;
+  height: 36svh;
   font-size: var(--font-size-reg);
   border-radius: var(--app-border-rad);
   resize: vertical;

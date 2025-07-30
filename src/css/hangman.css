@@ -11,17 +11,23 @@
   width: fit-content;
   height: fit-content;
   position: fixed;
-  top: 100px;
-  left: 100px;
+  top: 45%;
+  left: 45%;
+  transform: translateY(-45%);
+  transform: translateX(-45%);
   z-index: 1000;
   background-color: var(--retro-clr-bg);
   color: #012;
   font-size: 1.6rem;
   font-family: monospace;
+  box-shadow: -8px 8px 0 var(--clr-drk),
+    -9px 9px 2px #9c9ca785;
   user-select: none;
 }
 .drag-bar {
   width: 100%;
+  color: var(--clr-light-blue);
+  padding-left: 5px;;
   cursor: grab;
 }
 .top-bar {
@@ -37,8 +43,15 @@
   width: 30px;
   line-height: 30px;
   background-color: var(--retro-clr-exit-red);
+  cursor: pointer;
   text-align: center;
 }
+.retro-poll .btn, .hangman-start {
+  border-radius: 0;
+  border: solid 1px #ccc;
+  padding: 2px 5px;
+}
+
 .game-wrapper {
   height: 550px;
   width: 400px;
@@ -56,12 +69,7 @@
 .word-display {
   letter-spacing: 2px;
 }
-.hangman-start {
-  height: 50px;
-  width: 90px; 
-  border: solid 2px var(--retro-clr-topbar-blue);
-  background-color: var(--clr-tan);
-}
+
 .letter-guess {
   height: 70px;
   width: 90px;
@@ -77,6 +85,10 @@
 }
 .retro-poll {
   padding: var(--app-spacing);
+}
+
+.retro-poll label {
+
 }
 .retro-poll .btn {
   background-color: #10103b;

@@ -1,11 +1,11 @@
 import DraggablePopup from "../HangMan/DraggableDiv";
 import PollForm from "./PollForm";
 
-function PollPopUp({isVisible, onClose}) {
+function PollPopUp({isVisible, onClose, barText}) {
    if (!isVisible) return null;
 
   return(
-    <DraggablePopup  onClose={onClose}>
+    <DraggablePopup barText={barText} onClose={onClose}>
       <PollForm classChoice="retro-poll"></PollForm>
     </DraggablePopup>
   );

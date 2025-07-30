@@ -29,7 +29,6 @@ function GameConsole() {
     <div className="game-console">
       <h3 className="game-intro">
         THE ARCADE
-        <FaCircleInfo className="info-icon" />
       </h3>
       <div className="icon-wrapper">
         <a href="" target="_blank" className="game-icon">
@@ -62,14 +61,6 @@ function GameConsole() {
           </figure>
           <figcaption>Hangman</figcaption>
         </div>
-
-        <div className="game-icon" onClick={() => setShowPollPopUp(true)}>
-          <figure>
-            <img src={pollIcon} alt="Poll" />
-          </figure>
-          <figcaption>Vote</figcaption>
-        </div>
-
         <Link to="/releases" className="game-icon">
           <figure>
             <img src={releaseIcon} alt="Releases" />
@@ -77,9 +68,14 @@ function GameConsole() {
           <figcaption>Releases Page</figcaption>
         </Link>
       </div>
-
-      <HangManPopup isVisible={showHangman} onClose={() => setShowHangman(false)} />
-      <PollPopUp isVisible={showPollPopUp} onClose={() => setShowPollPopUp(false)} />
+      <div className="game-icon flex-end shake-me" onClick={() => setShowPollPopUp(true)}>
+        <figure>
+          <img src={pollIcon} alt="Poll" />
+        </figure>
+        <figcaption>Vote</figcaption>
+      </div>
+      <HangManPopup barText="Hangman" isVisible={showHangman} onClose={() => setShowHangman(false)} />
+      <PollPopUp barText="Monthly Poll" isVisible={showPollPopUp} onClose={() => setShowPollPopUp(false)} />
     </div>
   );
 }
