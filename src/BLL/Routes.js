@@ -9,8 +9,8 @@ import PageLayout from '../Layouts/PageLayout';
 import About from '../Pages/About';
 import PlayGround from '../Pages/PlayGround';
 import Releases from '../Pages/Releases';
-import Collaborations from '../Pages/Collaborations';
-
+import Collaborators from '../Pages/Collaborators';
+import SomethingElse from '../Pages/SomethingElse';
 export default function AppRoutes() {
   const location = useLocation();
     const [scrollReady, setScrollReady] = useState(false);
@@ -35,7 +35,8 @@ export default function AppRoutes() {
         <Route path="/contact" element={<PageLayout><Contact /></PageLayout>} />
         <Route path="/playground" element={<PageLayout><PlayGround /></PageLayout>} />
         <Route path="/releases" element={<PageLayout><Releases /></PageLayout>} />
-        <Route path="/collaborations" element={<PageLayout><Collaborations /></PageLayout>} />
+        <Route path="/collaborators" element={<PageLayout><Collaborators /></PageLayout>} />
+        <Route path="/something-else" element={<PageLayout><SomethingElse></SomethingElse></PageLayout>} />
       </Routes>
     </AnimatePresence>
   );
