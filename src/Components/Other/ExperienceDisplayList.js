@@ -1,10 +1,10 @@
 
 function ExperienceDisplayList({ experienceLinks }) {
   return (
-    <ul className="raised-link">
+    <ul>
       {experienceLinks.map((link, index) => (
         <li key={index}>
-          <a href={link.linkUrl}>{link.linkName}</a>
+          <a href={link.linkUrl} target="_blank">{link.linkName}</a>
         </li>
       ))}
     </ul>

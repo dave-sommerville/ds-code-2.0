@@ -32,6 +32,7 @@
   margin: var(--app-spacing);
 }
 
+
 .release-text:not(.w-100) {
   width: 400px;
   text-align: center;
@@ -39,6 +40,7 @@
 .release-text h4 {
   margin: 5 0;
   font-size: var(--font-size-subtitle);
+  text-wrap: wrap;
 }
 .release-text p {
   font-size: var(--font-size-reg);
@@ -53,5 +55,16 @@
 @media(orientation: portrait){
   .releases-wrapper article {
     flex-direction: column;
+  }
+  .release-text:not(.w-100), .release-text.w-100 {
+    width: fit-content;
+  }
+  .releases-wrapper article {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .release-text p, .release-text h4{
+    width: 300px;
   }
 }

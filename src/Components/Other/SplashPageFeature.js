@@ -85,7 +85,13 @@ function SplashPageFeature() {
             isActive={activeSection === 'Education'}
             onClick={() => handleExpand('Education')}
           >
-            <ExperienceDisplayList experienceLinks={ProfileObject.certfificates}></ExperienceDisplayList>
+            <p className="small-title">
+              Certificate of Software Development
+            </p>
+            <p>MITT</p>
+            <p className="small-title">LinkedIn Learning</p>
+            <ExperienceDisplayList className="linked-cert" experienceLinks={ProfileObject.certfificates}></ExperienceDisplayList>
+            <a href={linkedInProfile} target="_blank" rel="noopener noreferrer" class="raised-link">View my full LinkedIn here</a>
           </InfoButton>
         </div>
 

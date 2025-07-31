@@ -190,7 +190,7 @@ const havocAndHaven = new Portfolio(
 
 const potionPortal = new Portfolio(
   "https://dave-sommerville.github.io/ds-code-releases/img/potion-portal-preview.gif", 
-  "Pixie Pearl's Potion Portal", 
+  "Pixie's Potion Portal", 
   "Winforms app to manage see the effects of a variety of potions", 
   "https://dave-sommerville.github.io/ds-code-releases/dungeons-of-draegmor",
   ["Game", "Full stack", "Featured"],

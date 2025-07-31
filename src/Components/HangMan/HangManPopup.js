@@ -17,8 +17,6 @@ function HangManPopup({ isVisible, onClose, barText }) {
     if (!isVisible) return;
     setGallows(hangingMan[6]);
     setMessage('HANGMAN');
-    document.body.style.overflow = 'hidden';
-    return () => (document.body.style.overflow = '');
   }, [isVisible]);
 
   useEffect(() => {
@@ -38,6 +36,7 @@ function HangManPopup({ isVisible, onClose, barText }) {
     setPhrase(newPhrase);
     setDisplay(phraseArray.map(c => (c === ' ' ? ' ' : '_')));
     setWrongGuesses([]);
+    setGallows(hangingMan[0]);
     setGameRunning(true);
     setMessage('PHRASE');
     inputRef.current?.focus();
@@ -66,6 +65,7 @@ function HangManPopup({ isVisible, onClose, barText }) {
         if (updatedWrong.length >= 5) {
           setMessage('You lose!');
           setGameRunning(false);
+          setGallows(hangingMan[hangingMan.length - 1]);
         }
       }
     }

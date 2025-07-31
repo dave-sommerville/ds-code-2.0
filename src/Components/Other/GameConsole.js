@@ -36,25 +36,25 @@ function GameConsole() {
         THE ARCADE
       </h3>
       <div className="icon-wrapper">
-        <a href="" target="_blank" className="game-icon">
+        <a href="https://dave-sommerville.github.io/blackjack/" target="_blank" className="game-icon">
           <figure>
             <img src={blackjackIcon} alt="Blackjack" />
           </figure>
           <figcaption>Blackjack</figcaption>
         </a>
-        <a href="" target="_blank" className="game-icon">
+        <a href="https://dave-sommerville.github.io/script-scavengers/" target="_blank" className="game-icon">
           <figure>
             <img src={scriptIcon} alt="Script Scavengers" />
           </figure>
           <figcaption>Script Scavengers</figcaption>
         </a>
-        <a href="" target="_blank" className="game-icon">
+        <a href="https://dave-sommerville.github.io/code-breaker/" target="_blank" className="game-icon">
           <figure>
             <img src={codeIcon} alt="Code Breaker" />
           </figure>
           <figcaption>Code Breaker</figcaption>
         </a>
-        <a href="" target="_blank" className="game-icon">
+        <a href="https://dave-sommerville.github.io/boogle/" target="_blank" className="game-icon">
           <figure>
             <img src={boogleIcon} alt="Boogle" />
           </figure>

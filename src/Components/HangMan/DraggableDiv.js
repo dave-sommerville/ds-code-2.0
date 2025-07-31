@@ -25,9 +25,12 @@ function DraggablePopup({ children, onClose, barText, className = '' }) {
     };
     const onMouseUp = () => (isDragging = false);
 
-    drag.addEventListener('mousedown', onMouseDown);
-    window.addEventListener('mousemove', onMouseMove);
-    window.addEventListener('mouseup', onMouseUp);
+    const isMobile = window.innerWidth <= 480;
+    if (!isMobile) {
+      drag.addEventListener('mousedown', onMouseDown);
+      window.addEventListener('mousemove', onMouseMove);
+      window.addEventListener('mouseup', onMouseUp);
+    }
 
     return () => {
       drag.removeEventListener('mousedown', onMouseDown);
@@ -36,12 +39,21 @@ function DraggablePopup({ children, onClose, barText, className = '' }) {
     };
   }, []);
 
+  // 💡 Disable body scroll while popup is mounted
+  useEffect(() => {
+    const originalStyle = window.getComputedStyle(document.body).overflow;
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = originalStyle;
+    };
+  }, []);
+
   return (
     <div className={`pop-out ${className}`} ref={popupRef}>
       <div className="top-bar flex">
         <div className="drag-bar" ref={dragBarRef}>{barText}</div>
         <div className="exit-game pointer" onClick={onClose}>
-          <FaXmark></FaXmark>
+          <FaXmark />
         </div>
       </div>
       {children}

@@ -166,20 +166,20 @@ main {
   }
 
   .info-btn.expanded {
-    height: auto;
+    height: 600px;
     padding: 1rem; /* adjust to match your base spacing */
   }
     .splash-item-wrapper {
     width: 100svw;
-    padding: 0 50px;
+    padding: 0 var(--app-spacing);
   }
   .splash-info-btn-wrapper {
     flex-direction: column;
     width: 100svw;
-    padding: 0 50px;
+    padding: 0 var(--app-spacing);
   }
   .info-btn {
-    padding: 0 25px;
+    padding: 25px;
   }
 }
 
@@ -261,7 +261,9 @@ main {
 
 
 
-
+.linked-cert{
+  font-size: var(--font-size-small);
+}
 
 
 

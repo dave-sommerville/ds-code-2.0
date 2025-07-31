@@ -13,6 +13,9 @@ function Releases() {
       <section className="releases-wrapper">
         <h2>Releases</h2>
         <article>
+          <figure>
+            <img src="https://dave-sommerville.github.io/ds-code-releases/img/dungeongif.gif" className="eyeframe" alt="Dungeons of Draegmor preview" />
+          </figure>
           <div className="release-text">
             <h4>Dungeons of Draegmor <span className="orange-text">Beta</span></h4>
             <p>Text Based Console App</p>
@@ -41,9 +44,6 @@ function Releases() {
               </a>
             </p>
           </div>
-          <figure>
-            <img src="https://dave-sommerville.github.io/ds-code-releases/img/dungeongif.gif" className="eyeframe" alt="Dungeons of Draegmor preview" />
-          </figure>
         </article>
         <article>
           <figure>

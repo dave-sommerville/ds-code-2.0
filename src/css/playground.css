@@ -49,6 +49,11 @@
   margin: var(--app-spacing);
   cursor: pointer;
   transition: var(--app-transition);
+  min-width: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .flex-end{
@@ -67,6 +72,8 @@
 .game-console img {
   width: var(--app-icon-size);
 }
+
+
 @media(max-width: 650px){
   .game-console {
     width: 90svw;
@@ -76,6 +83,9 @@
     border-right: solid 20px #6700dd13;
     border-left: solid 20px #6700dd13;
 
+  }
+  .game-console figcaption {
+    font-size: 0.6rem;
   }
 }
 
