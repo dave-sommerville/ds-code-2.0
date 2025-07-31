@@ -2,7 +2,7 @@ import {ProfileObject} from '../BLL/Profile.js';
 import Article from '../Components/PageWide/Article.js';
 import { motion } from 'framer-motion';
 import {Link} from 'react-router-dom';
-import '../css/article.css';
+import '../css/common/article.css';
 
 function About() {
   return(

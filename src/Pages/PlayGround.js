@@ -1,7 +1,5 @@
-import GameConsole from '../Components/Other/GameConsole';
-import PollForm from '../Components/Other/PollForm';
-import PollPopUp from '../Components/Other/PollPopUp';
-import '../css/playground.css';
+import GameConsole from '../Components/PlaygroundPage/GameConsole';
+import '../css/pages/playground.css';
 import { motion } from 'framer-motion';
 
 function PlayGround() {

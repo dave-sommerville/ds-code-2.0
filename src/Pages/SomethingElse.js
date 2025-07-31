@@ -1,4 +1,5 @@
 import { FaEgg } from "react-icons/fa6";
+import '../css/pages/partial-pages.css';
 function SomethingElse(){
 
   return(

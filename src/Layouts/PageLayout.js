@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import HeroBanner from '../Components/PageWide/HeroBanner';
+import HeroBanner from '../Components/SplashPage/HeroBanner';
 import FloatingHeader from '../Components/PageWide/FloatingHeader';
 import Footer from '../Components/PageWide/Footer';
 import { useLocation } from 'react-router-dom';
-import UsePageTitle from '../BLL/UsePageTitle';
+import UsePageTitle from '../Controls/UsePageTitle';
 
 export default function PageLayout({ children }) {
   UsePageTitle();

@@ -1,6 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import '../../css/hero-banner.css';
-import '../../css/utils.css';
 import honeyComb from '../../media/img/honeycomb.svg';
 import { Link } from 'react-router-dom';
 const parallaxLayers = [

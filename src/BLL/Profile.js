@@ -24,7 +24,7 @@
     new Link("Myles", "https://github.com")
   ];
 
-  const learningCertificates = [
+  export const learningCertificates = [
     new Link("Advanced AI Prompt Engineering Techniques", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_Advanced%20Prompt%20Engineering%20Techniques.pdf#toolbar=0&navpanes=0"),
     new Link("Cert Prep: Scrum Master", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_Cert%20Prep%20Scrum%20Master.pdf#toolbar=0&navpanes=0"),
     new Link("Microsoft Power Platform Fundamentals", "https://dave-sommerville.github.io/ds-code-releases/data/CertificateOfCompletion_Microsoft%20Power%20Platform%20Fundamentals%20PL900%20Exam%20Tips.pdf#toolbar=0&navpanes=0"),
@@ -50,5 +50,5 @@
     gitRepos: new Link("GitHub Repositories",""),
     linkedIn: new Link("LinkedIn","https://www.linkedin.com/in/dave-sommerville-2abb50326"),
     youTube: new Link("YouTube",""),
-    certfificates: learningCertificates
+    certificates: learningCertificates
   }

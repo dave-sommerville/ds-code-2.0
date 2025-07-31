@@ -1,5 +1,6 @@
-import SplashPageFeature from "../Components/Other/SplashPageFeature.js";
+import SplashPageFeature from "../Components/SplashPage/SplashPageFeature";
 import { motion } from 'framer-motion';
+import '../css/hero-banner.css';
 
 function Home() {
   return(

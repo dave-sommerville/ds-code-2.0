@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { hangingMan, getRandomPhrase } from '../HangMan/HangManData';
-import DraggablePopup from '../HangMan/DraggableDiv';
-import { FaXmark } from 'react-icons/fa6';
-import '../../css/hangman.css';
+import { hangingMan, getRandomPhrase } from '../../../BLL/HangManData';
+import DraggablePopup from '../Retro/DraggableDiv';
+import '../../../css/common/retro.css';
 
 function HangManPopup({ isVisible, onClose, barText }) {
   const [gameRunning, setGameRunning] = useState(false);

@@ -5,9 +5,9 @@ import andreReview from '../../media/img/reviews/andre-linked-in-review.png';
 import creefordReview from '../../media/img/reviews/creeford-linked-in-review.png';
 import gurpreetReview from '../../media/img/reviews/gurpreet-linked-in-review.png';
 import samReview from '../../media/img/reviews/sam-linked-in-review.png';
-import { ProfileObject } from '../../BLL/Profile';
-import ExperienceDisplayList from './ExperienceDisplayList';
-import MarqueeText from '../Other/MarqueeText';
+import { ProfileObject, learningCertificates } from '../../BLL/Profile';
+import LinkListDisplay from '../PageWide/LinkListDisplay';
+import MarqueeText from '../PageWide/MarqueeText';
 
 function SplashPageFeature() {
   const topLinks = [
@@ -74,12 +74,11 @@ function SplashPageFeature() {
               <li>10 Years Administrative</li>
               <li className="small-title">Skills</li>
               <li>Technical</li>
-        <MarqueeText text=" HTML | CSS | JavaScript | C# | React | SQL | Php | Git | node.js | " />
+              <MarqueeText text=" HTML | CSS | JavaScript | C# | React | SQL | Php | Git | node.js | " />
               <li>Soft</li>
-        <MarqueeText text=" HTML | CSS | JavaScript | C# | React | SQL | Php | Git | node.js | " />
+              <MarqueeText text=" Professional | Organized | Efficient | Focused | Adaptable | Personable | Driven | Creative | " />
             </ul>
           </InfoButton>
-
           <InfoButton
             label="Education"
             isActive={activeSection === 'Education'}
@@ -90,7 +89,7 @@ function SplashPageFeature() {
             </p>
             <p>MITT</p>
             <p className="small-title">LinkedIn Learning</p>
-            <ExperienceDisplayList className="linked-cert" experienceLinks={ProfileObject.certfificates}></ExperienceDisplayList>
+            <LinkListDisplay className="linked-cert" linkList={learningCertificates}></LinkListDisplay>
             <a href={linkedInProfile} target="_blank" rel="noopener noreferrer" class="raised-link">View my full LinkedIn here</a>
           </InfoButton>
         </div>

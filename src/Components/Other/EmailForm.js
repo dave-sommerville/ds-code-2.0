@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../css/forms.css';
+import '../../css/common/forms.css';
 
 export default function EmailForm() {
   return (

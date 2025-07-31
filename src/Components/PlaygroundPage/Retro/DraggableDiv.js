@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { FaXmark } from 'react-icons/fa6';
-import '../../css/hangman.css';
+import '../../../css/common/retro.css';
 
 function DraggablePopup({ children, onClose, barText, className = '' }) {
   const popupRef = useRef(null);

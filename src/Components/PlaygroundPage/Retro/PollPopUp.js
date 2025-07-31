@@ -1,5 +1,5 @@
-import DraggablePopup from "../HangMan/DraggableDiv";
-import PollForm from "./PollForm";
+import DraggablePopup from "../Retro/DraggableDiv";
+import PollForm from "../../Other/PollForm";
 
 function PollPopUp({isVisible, onClose, barText}) {
    if (!isVisible) return null;

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FaSquareCaretRight, FaSquareCaretLeft, FaArrowUpRightFromSquare } from 'react-icons/fa6';
 import {Link} from 'react-router-dom';
-import '../../css/portfolio.css';
+import '../../css/pages/portfolio.css';
 
 function PortfolioFramework({ items }) {
   const [currentIndex, setCurrentIndex] = useState(0);

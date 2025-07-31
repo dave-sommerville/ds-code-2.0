@@ -1,6 +1,6 @@
 import { FaFile, FaGithub, FaBoxOpen } from 'react-icons/fa6';
 import {Link} from 'react-router-dom';
-import '../../css/hex-style.css';
+import '../../css/common/hex-style.css';
 
 function HexLinks() {
     return (

@@ -1,16 +1,14 @@
 import { useState, useEffect } from 'react';
-import HangManPopup from '../HangMan/HangManPopup';
-import PollPopUp from '../../Components/Other/PollPopUp'; // adjust path as needed
+import HangManPopup from '../PlaygroundPage/Retro/HangManPopup';
+import PollPopUp from '../PlaygroundPage/Retro/PollPopUp'; 
 import blackjackIcon from '../../media/img/icons/black-jack.png';
 import scriptIcon from '../../media/img/icons/desert.png';
 import codeIcon from '../../media/img/icons/terminal.png';
 import boogleIcon from '../../media/img/icons/boggle.png';
 import hangmanIcon from '../../media/img/icons/hangman.png';
 import releaseIcon from '../../media/img/icons/releases.png';
-import pollIcon from '../../media/img/icons/pop-up.png'; // add an icon for poll
-import { FaCircleInfo } from 'react-icons/fa6';
+import pollIcon from '../../media/img/icons/pop-up.png';
 import { Link } from 'react-router-dom';
-import '../../css/hangman.css';
 
 function GameConsole() {
   const [showHangman, setShowHangman] = useState(false);

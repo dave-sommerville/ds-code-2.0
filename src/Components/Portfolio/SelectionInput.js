@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { portfolioArray } from '../../BLL/PortfolioItems.js';
 import PortfolioFramework from './PortfolioFramework';
-import '../../css/portfolio.css';
 function SelectionInput() {
   const [selectedCategory, setSelectedCategory] = useState('');
   const [filteredItems, setFilteredItems] = useState(portfolioArray || []);

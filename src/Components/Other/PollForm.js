@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../css/forms.css';
+import '../../css/common/forms.css';
 function PollForm({classChoice}) {
   return (
     <form name="poll" method="POST" data-netlify="true" className={classChoice}>
