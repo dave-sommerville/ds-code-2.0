@@ -9,6 +9,24 @@
     padding: 0; 
 }
 
+body {
+  margin: 0;
+  font-family: "Space Grotesk", "IBM Mono Plex", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--clr-drk);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 ul[role='list'], ol[role='list']{
     list-style: none; 
 }

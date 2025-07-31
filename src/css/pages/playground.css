@@ -1,4 +1,7 @@
 @charset "utf-8";
+/*----------------------------------------------------------->
+  Responsive screen
+<------------------------------------------------------------*/
 :root {
   --app-scrn-size: 70svh;
   --app-icon-size: 6svh;
@@ -10,13 +13,15 @@
     --app-icon-size: 6svw;
   }
 }
+/*----------------------------------------------------------->
+  Play Area
+<------------------------------------------------------------*/
 .playground {
   height: 100svh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .game-console {
   image-rendering: pixelated;
   height: var(--app-scrn-size);
@@ -55,10 +60,15 @@
   align-items: center;
   justify-content: center;
 }
-
-.flex-end{
-  align-self: flex-end;
+.icon-hover {
+  transition: var(--app-transition);
 }
+
+.icon-hover:hover {
+   filter: brightness(1.3);
+}
+
+
 .game-icon:hover {
   filter: brightness(1.2) opacity(0.9);
 }
@@ -73,7 +83,9 @@
   width: var(--app-icon-size);
 }
 
-
+/*----------------------------------------------------------->
+  Media Queries
+<------------------------------------------------------------*/
 @media(max-width: 650px){
   .game-console {
     width: 90svw;
@@ -89,6 +101,9 @@
   }
 }
 
+/*----------------------------------------------------------->
+  Poll Animation
+<------------------------------------------------------------*/
 
 .shake-me {
   animation: subtleShake 1.5s infinite;

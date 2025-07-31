@@ -1,4 +1,4 @@
-// MarqueeText.jsx
+import '../../css/common/marquee.css';
 function MarqueeText({ text }) {
   return (
     <div className="marquee-container">

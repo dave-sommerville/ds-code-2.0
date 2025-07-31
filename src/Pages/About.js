@@ -3,6 +3,7 @@ import Article from '../Components/PageWide/Article.js';
 import { motion } from 'framer-motion';
 import {Link} from 'react-router-dom';
 import '../css/common/article.css';
+import '../css/pages/partial-pages.css';
 
 function About() {
   return(
