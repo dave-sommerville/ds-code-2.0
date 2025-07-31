@@ -15,13 +15,6 @@ function GameConsole() {
   const [showPollPopUp, setShowPollPopUp] = useState(false);
   const [hasClickedPollIcon, setHasClickedPollIcon] = useState(false);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowPollPopUp(true);
-    }, 3000);
-
-    return () => clearTimeout(timer);
-  }, []);
 
   const handlePollClick = () => {
     setShowPollPopUp(true);
