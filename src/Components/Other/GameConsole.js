@@ -15,15 +15,20 @@ import '../../css/hangman.css';
 function GameConsole() {
   const [showHangman, setShowHangman] = useState(false);
   const [showPollPopUp, setShowPollPopUp] = useState(false);
+  const [hasClickedPollIcon, setHasClickedPollIcon] = useState(false);
 
-  // Show PollPopUp automatically after 3 seconds
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowPollPopUp(true);
-    }, 3000); // adjust delay as needed
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);
+
+  const handlePollClick = () => {
+    setShowPollPopUp(true);
+    setHasClickedPollIcon(true); // ✅ stop shaking after first click
+  };
 
   return (
     <div className="game-console">
@@ -68,7 +73,10 @@ function GameConsole() {
           <figcaption>Releases Page</figcaption>
         </Link>
       </div>
-      <div className="game-icon flex-end shake-me" onClick={() => setShowPollPopUp(true)}>
+      <div
+        className={`game-icon flex-end ${!hasClickedPollIcon ? 'shake-me' : ''}`}
+        onClick={handlePollClick}
+      >
         <figure>
           <img src={pollIcon} alt="Poll" />
         </figure>

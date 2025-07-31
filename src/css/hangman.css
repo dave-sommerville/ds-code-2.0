@@ -58,6 +58,10 @@
   justify-content: center;
   align-items: center;
 }
+
+.game-title {
+  font-size: var(--font-size-subtitle);
+}
 .gallows, .word-display {
   font-size: 2rem;
 }
@@ -80,9 +84,7 @@
 .letter-guess:focus, .hangman-start:focus {
   outline: none;
 }
-.big-font {
-  font-size: 5rem;
-}
+
 .retro-poll {
   padding: var(--app-spacing);
 }

@@ -3,8 +3,10 @@ import HeroBanner from '../Components/PageWide/HeroBanner';
 import FloatingHeader from '../Components/PageWide/FloatingHeader';
 import Footer from '../Components/PageWide/Footer';
 import { useLocation } from 'react-router-dom';
+import UsePageTitle from '../BLL/UsePageTitle';
 
 export default function PageLayout({ children }) {
+  UsePageTitle();
   const { pathname } = useLocation();
   const isHome = pathname === '/';
   const [heroHeight, setHeroHeight] = useState(0);

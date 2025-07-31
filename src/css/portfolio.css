@@ -46,7 +46,7 @@ a {
   align-items: center;
 }
 .portfolio-form {
-  height: 55svh;
+  height: 58vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,7 +72,6 @@ a {
 .portfolio-description {
   width: 400px;
   font-size: var(--font-size-reg);
-  margin-bottom: 25px;
 }
 .info-link {
   font-size: var(--font-size-subtitle);
