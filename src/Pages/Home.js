@@ -1,7 +1,7 @@
 import SplashPageFeature from "../Components/SplashPage/SplashPageFeature";
 import { motion } from 'framer-motion';
 import '../css/pages/splash-page.css';
-
+import { Helmet } from 'react-helmet';
 function Home() {
   return(
     <motion.div

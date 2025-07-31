@@ -2,7 +2,7 @@ import LinkListDisplay from "../Components/PageWide/LinkListDisplay";
 import { Link } from 'react-router-dom';
 import { collaboratorList } from "../BLL/Profile";
 import '../css/pages/partial-pages.css';
-
+import { Helmet } from 'react-helmet';
 function Collaborators() {
   return(
     <section className="collaboration-list">
