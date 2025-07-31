@@ -19,9 +19,10 @@
     }
   }
   export const collaboratorList = [
-    new Link("Gurpreet", "https://github.com"),
-    new Link("Sam", "https://github.com"),
-    new Link("Myles", "https://github.com")
+    new Link("Gurpreet Kaur", "https://www.linkedin.com/in/gurpreetkaur-dev/"),
+    new Link("Sam Ruetcky", "https://www.linkedin.com/in/samuel-reutcky/"),
+    new Link("Myles Reid", "https://www.linkedin.com/in/mylesreid/"),
+    new Link("Michael Shuaibu", "https://www.linkedin.com/in/oluwajuwon-shuaibu/")
   ];
 
   export const learningCertificates = [

@@ -100,7 +100,12 @@
   align-items: center;
   justify-content: center;
 }
-
+.collaboration-list ul {
+  font-size: var(--font-size-reg);
+}
+.collaboration-list li {
+  margin-bottom: 5px;
+}
 /*----------------------------------------------------------->
   About Page (with article.css)
 <------------------------------------------------------------*/
@@ -112,6 +117,7 @@
 .about-contact a {
   color: var(--clr-light-blue);
   transition: var(--app-transition);
+  margin-bottom: var(--app-spacing);
 }
 .about-contact a:hover {
   color: var(--clr-primary);

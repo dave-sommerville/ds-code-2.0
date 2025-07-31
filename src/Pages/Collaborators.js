@@ -8,7 +8,7 @@ function Collaborators() {
     <section className="collaboration-list">
       <h3>Collaborators</h3>
       <LinkListDisplay linkList={collaboratorList} ></LinkListDisplay>
-      <Link to="/collaborators" className="">Say hi if you want to join the list</Link>
+      <Link to="/collaborators" className="">Reach out here if you're interested in joining the list!</Link>
     </section>
   );
 }
