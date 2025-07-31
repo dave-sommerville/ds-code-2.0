@@ -30,7 +30,7 @@ header h1 {
 
 header h2 {
   width: min(45svw, 800px);
-  font-size: var(--font-size-subtitle);
+  font-size: var(--font-size-title-code);
   margin-top: -25px;
 }
 header h3 {
@@ -134,8 +134,46 @@ h4 {
   background-image: url("../media/img/hexagon-dark.svg");
   z-index: 150;
 }
+.z1 {
+  z-index: 1;
+}
+.z2 {
+  z-index: 2;
+}
+
+.z3 {
+  z-index: 3;
+}
+
+.z4 {
+  z-index: 4;
+}
+
+.z5 {
+  z-index: 5;
+}
+
+.z6 {
+  z-index: 6;
+}
+
+.z7 {
+  z-index: 7;
+}
+
+.z8 {
+  z-index: 8;
+}
+.z100 {
+  z-index: 100;
+}
+
+
 @media(max-width: 900px) {
   .small-solid-orange-hex-one, .med-orange-hex-one {
     display: none;
+  }
+  header h2 {
+    margin-top: 0;
   }
 }

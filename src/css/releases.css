@@ -50,3 +50,8 @@
 .release-text a:hover {
   color: var(--clr-primary);
 }
+@media(orientation: portrait){
+  .releases-wrapper article {
+    flex-direction: column;
+  }
+}

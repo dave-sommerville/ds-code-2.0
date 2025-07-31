@@ -67,6 +67,18 @@
 .game-console img {
   width: var(--app-icon-size);
 }
+@media(max-width: 650px){
+  .game-console {
+    width: 90svw;
+    height: 90svw;
+    border-bottom: solid 20px #6700dd29;
+    border-top: solid 20px #6700dd29;
+    border-right: solid 20px #6700dd13;
+    border-left: solid 20px #6700dd13;
+
+  }
+}
+
 
 .shake-me {
   animation: subtleShake 1.5s infinite;

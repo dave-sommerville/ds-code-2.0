@@ -68,14 +68,14 @@
 
 .nav-links li a {
   text-decoration: none;
-  color: var(--clr-dark);
+  color: var(--clr-primary);
   font-weight: 600;
   transition: var(--app-transition);
 }
 
 .nav-links li a.active {
-  color: var(--clr-dark);
-  border-bottom: 2px solid var(--clr-accent, #ff6600);
+  color: var(--clr-primary);
+  border-bottom: 2px solid var(--clr-primary);
 }
 .nav-links li a:hover {
   color: var(--clr-light-blue);
@@ -91,7 +91,7 @@
     top: 60px;
     left: 0;
     width: 100%;
-    background: white;
+    background: var(--clr-drk);
     flex-direction: column;
     align-items: center;
     max-height: 0;
@@ -100,6 +100,7 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     z-index: 999;
+    cursor: pointer;
   }
 
   .nav-links.open {

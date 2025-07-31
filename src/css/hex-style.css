@@ -79,4 +79,7 @@
     --font-size-icons: 1.8rem;
     --font-size-captions: 0.8rem;
   }
+  .icon-caption.top{
+    top: -22px;
+  }
 } 
