@@ -47,9 +47,9 @@ const metaMap = {
 export default function UsePageTitle() {
   const { pathname } = useLocation();
   const meta = metaMap[pathname] || {
-    title: 'My Site',
-    description: 'Explore development projects and creative solutions.',
-    image: 'https://example.com/images/og-default.jpg',
+    title: 'DS Code',
+    description: 'My Online Portfolio celebrating my journey in web development.',
+    image: 'https://ds-code.ca/image/site-preview.png',
   };
 
   const siteUrl = 'https://ds-code.ca';
@@ -60,34 +60,6 @@ export default function UsePageTitle() {
       <title>{meta.title}</title>
       <meta name="description" content={meta.description} />
       <link rel="canonical" href="https://ds-code.ca/current-page-url" />
-      {/* Open Graph */}
-      <meta property="og:title" content={meta.title} />
-      <meta property="og:description" content={meta.description} />
-      <meta property="og:image" content={meta.image} />
-      <meta property="og:url" content={fullUrl} />
-      <meta property="og:type" content="website" />
-
-      {/* Twitter Card */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={meta.title} />
-      <meta name="twitter:description" content={meta.description} />
-      <meta name="twitter:image" content={meta.image} />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Brand",
-            "name": "DS Code",
-            "url": "https://ds-code.ca",
-            "logo": "https://ds-code.ca/public/images/site-preview.png",
-            "description": "A web developer based in Winnipeg, Canada, building fast, accessible, and modern websites. Actively seeking full-time opportunities. Focused on creating custom Web applications with best practices, crafting scalable, maintainable, and versatile code.",
-            "sameAs": [
-              "www.linkedin.com/in/dave-sommerville-2abb50326",
-              "https://github.com/dave-sommerville",
-              "https://www.youtube.com/@davesommerville-ds-code",
-              "https://dave-sommerville.github.io/ds-code-releases/"
-            ]
-          })}
-        </script>
     </Helmet>
   );
 }
