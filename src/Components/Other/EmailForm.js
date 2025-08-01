@@ -3,11 +3,12 @@ import '../../css/common/forms.css';
 
 export default function EmailForm() {
   return (
-    <form className="message" name="contact" method="POST" data-netlify="true">
+    <form className="message" name="contact" method="POST" data-netlify="true" netlify netlify-honeypot="bot-field">
       <h5>Send Me a Message</h5>
 
       {/* Required for Netlify form processing */}
       <input type="hidden" name="form-name" value="contact" />
+      <input type="hidden" name="bot-field" />
 
       <input
         type="text"
