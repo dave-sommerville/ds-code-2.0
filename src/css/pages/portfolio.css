@@ -37,7 +37,7 @@ a {
   cursor: pointer;
 }
 .portfolio-framework {
-  height: 700px;
+  height: 500px;
   position: relative;
   transition: var(--app-transition);
   display: flex;
@@ -45,7 +45,6 @@ a {
   align-items: center;
 }
 .portfolio-form {
-  height: 55svh;
   display: flex;
   flex-direction: column;
   align-items: center;
