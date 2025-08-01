@@ -5,42 +5,42 @@ const metaMap = {
   '/': {
     title: 'Home | DS Code',
     description: 'My Online Portfolio celebrating my journey in web development.',
-    image: 'https://ds-code.ca/public/images/site-preview.png',
+    image: 'https://ds-code.ca/image/site-preview.png',
   },
   '/about': {
     title: 'About | DS Code',
     description: 'Learn my story and the mission of DS Code.',
-    image: 'https://ds-code.ca/public/images/site-preview.png',
+    image: 'https://ds-code.ca/image/site-preview.png',
   },
   '/portfolio': {
     title: 'Portfolio | DS Code',
     description: 'Explore my work by category.',
-    image: 'https://ds-code.ca/public/images/site-preview.png',
+    image: 'https://ds-code.ca/image/site-preview.png',
   },
     '/playground': {
     title: 'Games | DS Code',
     description: 'Welcome to the playground, because I learn best when I have fun.',
-    image: 'https://ds-code.ca/public/images/site-preview.png',
+    image: 'https://ds-code.ca/image/site-preview.png',
   },
     '/contact': {
     title: 'Contact | DS Code',
     description: 'Reach out and say hi!',
-    image: 'https://ds-code.ca/public/images/site-preview.png',
+    image: 'https://ds-code.ca/image/site-preview.png',
   },
     '/collaborators': {
     title: 'Collaborators | DS Code',
     description: "Fellow devlopers I've had the opportunity to collaborate with.",
-    image: 'https://ds-code.ca/public/images/site-preview.png',
+    image: 'https://ds-code.ca/image/site-preview.png',
   },
     '/releases': {
     title: 'Releases | DS Code',
     description: 'Some of my more packages and external projects.',
-    image: 'https://ds-code.ca/public/images/site-preview.png',
+    image: 'https://ds-code.ca/image/site-preview.png',
   },
     '/': {
     title: 'Something Else... | DS Code',
     description: 'You found an easter egg!',
-    image: 'https://ds-code.ca/public/images/site-preview.png',
+    image: 'https://ds-code.ca/image/site-preview.png',
   },
 };
 
