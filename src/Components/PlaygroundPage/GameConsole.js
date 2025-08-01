@@ -65,7 +65,7 @@ function GameConsole() {
         </Link>
       </div>
       <div
-        className={`game-icon flex-end ${!hasClickedPollIcon ? 'shake-me' : ''}`}
+        className={`game-icon flex-end mb-10 ${!hasClickedPollIcon ? 'shake-me' : ''}`}
         onClick={handlePollClick}
       >
         <figure>

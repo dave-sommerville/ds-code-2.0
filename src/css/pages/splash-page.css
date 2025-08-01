@@ -250,7 +250,7 @@ h4 {
 }
 .info-btn.expanded {
   flex: 1;
-  height: 700px;
+  height: 740px;
 }
 .info-expander-inline {
   padding: var(--app-spacing);
@@ -318,7 +318,7 @@ h4 {
     flex: none; 
   }
   .info-btn.expanded {
-    height: 600px;
+    height: 630px;
     padding: var(--app-spacing);
   }
     .splash-item-wrapper {

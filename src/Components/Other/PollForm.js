@@ -1,4 +1,3 @@
-import React from 'react';
 import '../../css/common/forms.css';
 function PollForm({classChoice}) {
   return (
@@ -7,6 +6,7 @@ function PollForm({classChoice}) {
 
       {/* Hidden input for Netlify form handling */}
       <input type="hidden" name="form-name" value="poll" />
+      <input type="hidden" name="bot-field" />
 
       <label className="poll-option pointer hover">
         <input type="radio" name="feature" value="Cactus Jump" />

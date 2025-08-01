@@ -54,7 +54,7 @@
   margin: var(--app-spacing);
   cursor: pointer;
   transition: var(--app-transition);
-  min-width: 40px;
+  min-width: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
