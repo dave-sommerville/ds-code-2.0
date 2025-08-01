@@ -1,3 +1,13 @@
-# https://www.robotstxt.org/robotstxt.html
+# robots.txt for ds-code.ca - React SPA on Netlify
+
 User-agent: *
-Disallow:
+Disallow: /admin/
+Disallow: /drafts/
+Disallow: /private/
+Allow: /
+
+# Netlify serves everything from root, so paths like /admin/ must exist in build or redirects
+# React SPA note: crawlers will see the root HTML and client-side render routes (with proper prerendering or SSR)
+
+# Point crawlers to your sitemap (if available)
+Sitemap: https://ds-code.ca/sitemap.xml
