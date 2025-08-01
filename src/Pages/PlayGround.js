@@ -1,7 +1,6 @@
 import GameConsole from '../Components/PlaygroundPage/GameConsole';
 import '../css/pages/playground.css';
 import { motion } from 'framer-motion';
-import { Helmet } from 'react-helmet';
 function PlayGround() {
   return(
     <motion.div

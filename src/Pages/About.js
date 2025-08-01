@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import {Link} from 'react-router-dom';
 import '../css/common/article.css';
 import '../css/pages/partial-pages.css';
-import { Helmet } from 'react-helmet';
 function About() {
   return(
     <motion.div

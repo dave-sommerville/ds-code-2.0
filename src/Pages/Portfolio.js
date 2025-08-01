@@ -2,7 +2,6 @@ import HexLinks from "../Components/Portfolio/HexLinks";
 import SelectionInput from "../Components/Portfolio/SelectionInput";
 import {portfolioArray} from '../BLL/PortfolioItems';
 import { motion } from 'framer-motion';
-import { Helmet } from 'react-helmet';
 function Portfolio() {
   return(
     <motion.div

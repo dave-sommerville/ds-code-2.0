@@ -2,7 +2,6 @@ import EmailForm from '../Components/Other/EmailForm.js';
 import SocialMediaHexes from '../Components/Other/SocialMediaHexes.js';
 import '../css/common/forms.css';
 import { motion } from 'framer-motion';
-import { Helmet } from 'react-helmet';
 function Contact() {
   return(
     <motion.div

@@ -1,22 +1,53 @@
+// Controls/UsePageTitle.jsx
 import { useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 
-function UsePageTitle() {
-  const location = useLocation();
+const metaMap = {
+  '/': {
+    title: 'Home | My Site',
+    description: 'Welcome to My Site, a hub of creative code and design.',
+    image: 'https://dave-sommerville.github.io/ds-code-releases/img/blackjack-preview-start.jpg',
+  },
+  '/about': {
+    title: 'About | My Site',
+    description: 'Learn more about the creator and the mission of My Site.',
+    image: 'https://dave-sommerville.github.io/ds-code-releases/img/script-scavengers-preview-start.jpg',
+  },
+  '/portfolio': {
+    title: 'Portfolio | My Site',
+    description: 'Explore recent projects and case studies.',
+    image: 'https://dave-sommerville.github.io/ds-code-releases/img/script-scavengers-preview-start.jpg',
+  },
+};
 
-  useEffect(() => {
-    const routeToTitle = {
-      '/': 'Home | My Site',
-      '/about': 'About | My Site',
-      '/portfolio': 'Portfolio | My Site',
-      '/contact': 'Contact | My Site',
-      '/playground': 'Playground | My Site',
-      '/releases': 'Releases | My Site',
-      '/collaborators': 'Collaborators | My Site',
-      '/something-else': 'More Stuff | My Site',
-    };
+export default function UsePageTitle() {
+  const { pathname } = useLocation();
+  const meta = metaMap[pathname] || {
+    title: 'My Site',
+    description: 'Explore development projects and creative solutions.',
+    image: 'https://example.com/images/og-default.jpg',
+  };
 
-    document.title = routeToTitle[location.pathname] || 'My Site';
-  }, [location.pathname]);
+  const siteUrl = 'https://ds-code.ca'; // update to your real domain
+  const fullUrl = `${siteUrl}${pathname}`;
+
+  return (
+    <Helmet>
+      <title>{meta.title}</title>
+      <meta name="description" content={meta.description} />
+
+      {/* Open Graph */}
+      <meta property="og:title" content={meta.title} />
+      <meta property="og:description" content={meta.description} />
+      <meta property="og:image" content={meta.image} />
+      <meta property="og:url" content={fullUrl} />
+      <meta property="og:type" content="website" />
+
+      {/* Twitter Card */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={meta.title} />
+      <meta name="twitter:description" content={meta.description} />
+      <meta name="twitter:image" content={meta.image} />
+    </Helmet>
+  );
 }
-export default UsePageTitle;

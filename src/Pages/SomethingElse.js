@@ -1,6 +1,5 @@
 import { FaEgg } from "react-icons/fa6";
 import '../css/pages/partial-pages.css';
-import { Helmet } from 'react-helmet';
 function SomethingElse(){
 
   return(
