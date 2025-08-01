@@ -113,7 +113,7 @@ const opalOnyx = new Portfolio(
   "Collaboration project exploring luxury ecommerce design.",
   "https://dave-sommerville.github.io/opal-and-onyx/",
   ["Featured", "Ecommerce and Organization"],
-  ["Sam Ruetcky", "Myles Reid"]
+  ["Collaborators: ", "Sam Ruetcky", "Myles Reid"]
 );
 
 const hiveMind = new Portfolio(
@@ -122,7 +122,7 @@ const hiveMind = new Portfolio(
   "Collaboration project creating our own version of a social media site.", 
   "https://dave-sommerville.github.io/hivemind/",
   ["Featured", "Social media"],
-  ["Sam Ruetcky", "Myles Reid", "Michael Shuaibu"]
+  ["Collaborators: ", "Sam Ruetcky", "Myles Reid", "Michael Shuaibu"]
 );
 
 const cactusTheatre = new Portfolio(
@@ -140,7 +140,7 @@ const cedarU = new Portfolio(
   "Informational website for fictional University",
   "https://dave-sommerville.github.io/cedar-university-2024/", 
   ["Ecommerce and Organization"],
-  ["Sam Ruetcky", "Myles Reid"]
+  ["Collaborators: ", "Sam Ruetcky", "Myles Reid"]
 );
 
 const switches = new Portfolio(
@@ -185,7 +185,7 @@ const havocAndHaven = new Portfolio(
   "Covering the real estate needs of hero and villain alike", 
   "https://github.com/dave-sommerville/Havoc_And_Haven",
   ["Full stack", "Social media"],
-  ["Gurpreet Kaur"]
+  ["Collaborators: ", "Gurpreet Kaur", "Michael Shuaibu"]
 );
 
 const potionPortal = new Portfolio(

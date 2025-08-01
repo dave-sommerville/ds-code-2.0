@@ -229,6 +229,7 @@ h4 {
 }
 .splash-info-btn-wrapper.open {
   gap: 0;
+  height: 600px;
 }
 .splash-info-btn-wrapper.open > *:not(.expanded) {
   flex: 0;
