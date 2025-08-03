@@ -140,7 +140,7 @@ const cedarU = new Portfolio(
   "Informational website for fictional University",
   "https://dave-sommerville.github.io/cedar-university-2024/", 
   ["Ecommerce and Organization"],
-  ["Collaborators: ", "Sam Ruetcky", "Myles Reid"]
+  ["Collaborators: ", "Sam Ruetcky", "Myles Reid", "Michael Shuaibu"]
 );
 
 const switches = new Portfolio(

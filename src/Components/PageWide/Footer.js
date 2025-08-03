@@ -12,7 +12,7 @@ function Footer() {
           <ul>
             <li><a href="https://github.com/dave-sommerville?tab=repositories" target="_blank" rel="noopener noreferrer">Repositories</a></li>
             <li><a href="https://dave-sommerville.github.io/ds-code-releases/data/dave-sommerville-resume-2025.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
-            <li><Link to="/releases">Release</Link></li>
+            <li><Link to="/releases">Releases</Link></li>
           </ul>
         </div>
         <div className="footer-column">

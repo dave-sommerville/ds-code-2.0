@@ -37,7 +37,7 @@ const metaMap = {
     description: 'Some of my more packages and external projects.',
     image: 'https://ds-code.ca/image/site-preview.png',
   },
-    '/': {
+    '/something-else': {
     title: 'Something Else... | DS Code',
     description: 'You found an easter egg!',
     image: 'https://ds-code.ca/image/site-preview.png',
