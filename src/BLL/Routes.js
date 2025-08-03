@@ -11,6 +11,8 @@ import PlayGround from '../Pages/PlayGround';
 import Releases from '../Pages/Releases';
 import Collaborators from '../Pages/Collaborators';
 import SomethingElse from '../Pages/SomethingElse';
+import NotFound from '../Pages/NotFound';
+
 export default function AppRoutes() {
   const location = useLocation();
     const [scrollReady, setScrollReady] = useState(false);
@@ -37,6 +39,7 @@ export default function AppRoutes() {
         <Route path="/releases" element={<PageLayout><Releases /></PageLayout>} />
         <Route path="/collaborators" element={<PageLayout><Collaborators /></PageLayout>} />
         <Route path="/something-else" element={<PageLayout><SomethingElse></SomethingElse></PageLayout>} />
+        <Route path="*" element={<PageLayout><NotFound></NotFound></PageLayout>}></Route>
       </Routes>
     </AnimatePresence>
   );

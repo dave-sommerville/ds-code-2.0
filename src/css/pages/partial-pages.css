@@ -138,3 +138,29 @@
 .about-contact a:hover {
   color: var(--clr-primary);
 }
+/*----------------------------------------------------------->
+  Not Found
+<------------------------------------------------------------*/
+.not-found {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.not-found h1 {
+  font-size: var(--font-size-title);
+  color: var(--clr-light-blue);
+}
+.not-found p {
+  font-size: var(--font-size-reg);
+  color: var(--clr-light-blue);
+  margin: var(--app-spacing) 0;
+}
+.not-found a {
+  font-size: var(--font-size-subtitle);
+  transition: var(--app-transition);
+}
+.not-found a:hover{
+  color: var(--clr-primary);
+}
