@@ -12,7 +12,7 @@ function HexLinks() {
         <div className="hex">
           <FaBoxOpen className="hex-icon" />
         </div>
-          <p className="icon-caption top">Releaes</p>
+          <p className="icon-caption top">Releases</p>
       </Link>
       <a
         href="https://github.com/dave-sommerville?tab=repositories"
