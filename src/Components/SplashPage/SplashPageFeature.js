@@ -64,20 +64,36 @@ function SplashPageFeature() {
             isActive={activeSection === 'Experience'}
             onClick={() => handleExpand('Experience')}
           >
-            <p>
-              I have robust experience from a variety of fields,
-              each impacting me in a valuable way. My experience includes:
-            </p>
-            <ul className="experience-list">
-              <li>1 Year Programming</li>
-              <li>5 Years Management</li>
-              <li>10 Years Administrative</li>
-              <li className="small-title">Skills</li>
-              <li>Technical</li>
-              <MarqueeText text=" HTML | CSS | JavaScript | C# | React | SQL | Php | Git | node.js | " />
-              <li>Soft</li>
-              <MarqueeText text=" Professional | Organized | Efficient | Focused | Adaptable | Personable | Driven | Creative | " />
-            </ul>
+            <div className="flex">
+
+              <ul className="xp-list">
+                <li className="xp-title">Development Skills</li>
+                <li>HTML/CSS, JavaScript, C#, React</li>
+                <li>ASP.NET Core, REST APIs</li>
+                <li>SQL, MySQL</li>
+                <li>Git, GitHub</li>
+                <li>VS Code, Visual Studio</li>
+                <li>NUnit, Moq</li>
+              </ul>
+              <ul className="xp-list">
+                  <li className="xp-title">Tools &amp; Platforms</li>
+                <li>Power Automate</li>
+                <li>Jira</li>
+                <li>SOAP UI</li>
+                <li>PeopleSoft</li>
+                <li>SharePoint</li>
+                <li>Verint</li>
+              </ul>
+              <ul className="xp-list">
+                  <li className="xp-title">Soft Skills</li>
+                <li>Driven</li>
+                <li>Adaptable</li>
+                <li>Professional</li>
+                <li>Efficient</li>
+                <li>Organized</li>
+                <li>Personable</li>
+              </ul>
+            </div>
           </InfoButton>
           <InfoButton
             label="Education"

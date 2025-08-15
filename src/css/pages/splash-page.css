@@ -207,7 +207,7 @@ h4 {
   flex-direction: column;
   gap: 1.5rem;
   margin-bottom: 2rem;
-  width: 40svw;
+  width: 50svw;
 }
 /*  -- Child - */
 .splash-item {
@@ -223,7 +223,7 @@ h4 {
 
 .splash-info-btn-wrapper {
   height: fit-content;
-  width: 40svw;
+  width: 50svw;
   display: flex;
   gap: 10px;
 }
@@ -256,9 +256,7 @@ h4 {
 .info-expander-inline {
   padding: var(--app-spacing);
 }
-.info-expander-inline p {
-  margin-bottom: var(--app-spacing);
-}
+
 
 /* -- Info Link -- */
 .raised-link {
@@ -299,10 +297,16 @@ h4 {
   color: var(--clr-primary);
 }
 
-.experience-list {
-  text-align: center;
+.xp-title {
+  margin: 0;
+  line-height: 35px;
+  font-weight: 600;
 }
-
+.xp-list {
+  line-height: 30px;
+  margin-bottom: 5px;
+  flex: 1;
+}
 /*----------------------------------------------------------->
   Media Queries
 <------------------------------------------------------------*/
@@ -322,7 +326,23 @@ h4 {
     height: 630px;
     padding: var(--app-spacing);
   }
-    .splash-item-wrapper {
+
+  .info-btn {
+    padding: 25px;
+  }
+}
+  .reviews-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .info-icon {
+    margin-left: 10px;
+}
+@media(max-width: 920px) {
+  .splash-item-wrapper {
     width: 100svw;
     padding: 0 var(--app-spacing);
   }
@@ -331,20 +351,7 @@ h4 {
     width: 100svw;
     padding: 0 var(--app-spacing);
   }
-  .info-btn {
-    padding: 25px;
+  .reviews-list img {
+    width: 95svw;
   }
-}
-.reviews-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-.reviews-list img {
-  width: 500px;
-  border-radius: var(--app-border-rad);
-}
-.info-icon {
-  margin-left: 10px;
 }
