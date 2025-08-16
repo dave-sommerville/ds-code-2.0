@@ -1,6 +1,6 @@
-function LinkListDisplay({linkList}) {
+function LinkListDisplay({linkList, classTitle}) {
   return (
-    <ul>
+    <ul className={classTitle}>
       {linkList.map((link, index) => (
         <li key={index}>
           <a href={link.linkUrl} target="_blank">{link.linkName}</a>

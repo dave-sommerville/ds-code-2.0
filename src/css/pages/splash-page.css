@@ -251,7 +251,7 @@ h4 {
 }
 .info-btn.expanded {
   flex: 1;
-  height: 740px;
+  height: 940px;
 }
 .info-expander-inline {
   padding: var(--app-spacing);
@@ -296,16 +296,21 @@ h4 {
 .raised-link:hover, .raised-link a:hover {
   color: var(--clr-primary);
 }
-
+.xp-list li:not(.xp-title) {
+  font-size: var(--font-size-small);
+}
 .xp-title {
   margin: 0;
-  line-height: 35px;
   font-weight: 600;
+  font-size: var(--font-size-reg);
 }
 .xp-list {
-  line-height: 30px;
   margin-bottom: 5px;
   flex: 1;
+}
+.flex.col {
+  flex-wrap: wrap;
+  gap: 10px;
 }
 /*----------------------------------------------------------->
   Media Queries
@@ -355,3 +360,9 @@ h4 {
     width: 95svw;
   }
 }
+ 
+@media(max-width: 600px) {
+  .flex.col ul{
+
+  }
+} 

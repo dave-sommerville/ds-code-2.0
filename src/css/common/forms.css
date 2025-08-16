@@ -50,8 +50,8 @@
 /*----------------------------------------------------------->
 	Contact Section
 <------------------------------------------------------------*/
-h5 {
-  font-size: var(--app-font-size);
+.contact h5 {
+  font-size: var(--font-size-subtitle);
   font-weight: 600;
   text-align: center;
   margin: var(--app-spacing) 0;
@@ -67,7 +67,11 @@ h5 {
   align-items: center;
   justify-content: center;
 }
-
+.contact-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .message {
   margin-bottom: 50px;
   width: 60svw;

@@ -1,10 +1,19 @@
 import React from 'react';
+import { FaPaperPlane } from 'react-icons/fa6';
 import '../../css/common/forms.css';
 
 export default function EmailForm() {
   return (
     <form className="message" name="contact" method="POST" data-netlify="true" netlify netlify-honeypot="bot-field">
-      <h5>Send Me a Message</h5>
+      <div className="contact-title">
+
+      <h5>
+        Send Me a Message 
+      </h5>
+        <a href="mailto:dave.r.sommerville@outlook.com" className="btn">
+          <FaPaperPlane></FaPaperPlane>
+        </a>
+      </div>
 
       {/* Required for Netlify form processing */}
       <input type="hidden" name="form-name" value="contact" />

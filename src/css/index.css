@@ -46,6 +46,9 @@ main {
 .mb-10 {
   margin-bottom: 10px;
 }
+.mb-25 {
+  margin-bottom: var(--app-spacing);
+}
 .w-100 {
   width: 100%;
 }

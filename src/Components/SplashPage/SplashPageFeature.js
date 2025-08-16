@@ -64,8 +64,7 @@ function SplashPageFeature() {
             isActive={activeSection === 'Experience'}
             onClick={() => handleExpand('Experience')}
           >
-            <div className="flex">
-
+            <div className="flex col">
               <ul className="xp-list">
                 <li className="xp-title">Development Skills</li>
                 <li>HTML/CSS, JavaScript, C#, React</li>
@@ -76,7 +75,7 @@ function SplashPageFeature() {
                 <li>NUnit, Moq</li>
               </ul>
               <ul className="xp-list">
-                  <li className="xp-title">Tools &amp; Platforms</li>
+                <li className="xp-title">Tools &amp; Platforms</li>
                 <li>Power Automate</li>
                 <li>Jira</li>
                 <li>SOAP UI</li>
@@ -85,7 +84,7 @@ function SplashPageFeature() {
                 <li>Verint</li>
               </ul>
               <ul className="xp-list">
-                  <li className="xp-title">Soft Skills</li>
+                <li className="xp-title">Soft Skills</li>
                 <li>Driven</li>
                 <li>Adaptable</li>
                 <li>Professional</li>
@@ -100,13 +99,13 @@ function SplashPageFeature() {
             isActive={activeSection === 'Education'}
             onClick={() => handleExpand('Education')}
           >
-            <p className="small-title">
-              Certificate of Software Development
+            <p className="xp-title">
+              Manitoba Institute of Trades and Technology
             </p>
-            <p>MITT</p>
-            <p className="small-title">LinkedIn Learning</p>
-            <LinkListDisplay className="linked-cert" linkList={learningCertificates}></LinkListDisplay>
-            <a href={linkedInProfile} target="_blank" rel="noopener noreferrer" class="raised-link">View my full LinkedIn here</a>
+            <p className="mb-25">Certificate of Software Development</p>
+            <p className="xp-title">LinkedIn Learning</p>
+            <LinkListDisplay classTitle="linked-cert mb-25" linkList={learningCertificates}></LinkListDisplay>
+              <a href={linkedInProfile} target="_blank" rel="noopener noreferrer" class="raised-link">View my full LinkedIn here</a>
           </InfoButton>
         </div>
 
