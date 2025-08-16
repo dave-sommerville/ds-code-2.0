@@ -128,7 +128,7 @@ const hiveMind = new Portfolio(
 const cactusTheatre = new Portfolio(
   "https://dave-sommerville.github.io/ds-code-releases/img/cactus-preview.jpg", 
   "Cactus Theatre Co", 
-  "Promotional website for Winnipeg Fringe Festival", 
+  "Promotional website for local Winnipeg Fringe Festival production", 
   "https://cactus-theatre-co.ca",
   ["Featured", "Ecommerce and Organization", "Freelance"],
   []

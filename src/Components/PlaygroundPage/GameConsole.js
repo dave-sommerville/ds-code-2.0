@@ -23,9 +23,6 @@ function GameConsole() {
 
   return (
     <div className="game-console">
-      <h3 className="game-intro">
-        THE ARCADE
-      </h3>
       <div className="icon-wrapper">
         <a href="https://dave-sommerville.github.io/blackjack/" target="_blank" className="game-icon">
           <figure>

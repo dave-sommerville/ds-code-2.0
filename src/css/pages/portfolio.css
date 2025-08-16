@@ -133,7 +133,9 @@ a {
 .right-btn {
   right: 0px;
 }
-
+.portfolio-wrapper {
+  padding-top: 100px;
+}
 }
 @media (max-width: 480px) {
   .portfolio-preview {

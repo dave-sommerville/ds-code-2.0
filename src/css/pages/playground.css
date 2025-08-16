@@ -44,10 +44,12 @@
   color: var(--clr-bg);
 }
 .game-intro {
-  color: var(--clr-drk);
-  font-size: var(--font-size-reg);
+  color: var(--clr-light-blue);
+  font-size: var(--font-size-subtitle);
   font-family: "Kode Mono";
   text-align: center;
+  position: absolute;
+  top: 100px;
 }
 
 .game-icon {

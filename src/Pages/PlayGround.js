@@ -10,7 +10,10 @@ function PlayGround() {
       transition={{ duration: 0.4 }}
     >
       <section className="playground">
-       <GameConsole></GameConsole>
+        <h3 className="game-intro">
+          THE ARCADE
+        </h3>
+        <GameConsole></GameConsole>
       </section>
     </motion.div>
   );
