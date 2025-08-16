@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { portfolioArray } from '../../BLL/PortfolioItems.js';
 import PortfolioFramework from './PortfolioFramework';
+
 function SelectionInput() {
   const [selectedCategory, setSelectedCategory] = useState('');
   const [filteredItems, setFilteredItems] = useState(portfolioArray || []);
@@ -17,7 +18,7 @@ function SelectionInput() {
       setFilteredItems(portfolioArray);
     } else {
       const filtered = portfolioArray.filter(item =>
-        item.category.includes(value)
+        item.category?.includes(value) // safe optional chaining
       );
       setFilteredItems(filtered);
     }
@@ -25,14 +26,23 @@ function SelectionInput() {
 
   return (
     <div className="portfolio-form">
-      <select class="category-select" value={selectedCategory} onChange={handleChange}>
+      <select
+        className="category-select"   // ✅ fixed className
+        value={selectedCategory}
+        onChange={handleChange}
+      >
         <option value="">-- All --</option>
         {allCategories.map(cat => (
           <option key={cat} value={cat}>{cat}</option>
         ))}
       </select>
 
-      <PortfolioFramework items={filteredItems} />
+      {/* ✅ Only render framework if we have items */}
+      {filteredItems.length > 0 ? (
+        <PortfolioFramework items={filteredItems} />
+      ) : (
+        <p>No portfolio items found for this category.</p>
+      )}
     </div>
   );
 }
