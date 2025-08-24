@@ -19,6 +19,7 @@ function SplashPageFeature() {
   const [activeSection, setActiveSection] = useState(null);
   const isAnyExpanded = activeSection !== null;
   const linkedInProfile = ProfileObject.linkedIn.linkUrl;
+  const resume = ProfileObject.resume;
   const handleExpand = (section) => {
     setActiveSection(prev => (prev === section ? null : section));
   };
@@ -66,16 +67,16 @@ function SplashPageFeature() {
           >
             <div className="flex col">
               <ul className="xp-list">
-                <li className="xp-title">Development Skills</li>
-                <li>HTML/CSS, JavaScript, C#, React</li>
-                <li>ASP.NET Core, REST APIs</li>
-                <li>SQL, MySQL</li>
-                <li>Git, GitHub</li>
-                <li>VS Code, Visual Studio</li>
+                <li className="xp-title">Dev Skills</li>
+                <li>HTML/CSS</li>
+                <li>JavaScript, C#</li>
+                <li>ASP.NET EF Core</li>
+                <li>React, SQL, MySQL</li>
+                <li>REST APIs, Git</li>
                 <li>NUnit, Moq</li>
               </ul>
               <ul className="xp-list">
-                <li className="xp-title">Tools &amp; Platforms</li>
+                <li className="xp-title">Tools &amp; GUIs</li>
                 <li>Power Automate</li>
                 <li>Jira</li>
                 <li>SOAP UI</li>
@@ -92,6 +93,7 @@ function SplashPageFeature() {
                 <li>Organized</li>
                 <li>Personable</li>
               </ul>
+              <a href={resume} target="_blank" rel="noopener noreferrer" class="raised-link">View my Resume here</a>
             </div>
           </InfoButton>
           <InfoButton

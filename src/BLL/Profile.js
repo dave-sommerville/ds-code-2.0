@@ -51,5 +51,6 @@
     gitRepos: new Link("GitHub Repositories",""),
     linkedIn: new Link("LinkedIn","https://www.linkedin.com/in/dave-sommerville-2abb50326"),
     youTube: new Link("YouTube",""),
-    certificates: learningCertificates
+    certificates: learningCertificates,
+    resume: "https://dave-sommerville.github.io/ds-code-releases/data/Dave-Sommerville-Resume-2025-Developer-Programmer-Designer-WinnipegMB.pdf"
   }

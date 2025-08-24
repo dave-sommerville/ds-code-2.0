@@ -1,4 +1,5 @@
 import { FaFile, FaGithub, FaBoxOpen } from 'react-icons/fa6';
+import { ProfileObject } from '../../BLL/Profile';
 import {Link} from 'react-router-dom';
 import '../../css/common/hex-style.css';
 
@@ -26,7 +27,7 @@ function HexLinks() {
           <p className="icon-caption bottom">Repositories</p>
       </a>
       <a
-        href="https://dave-sommerville.github.io/ds-code-releases/data/dave-sommerville-resume-2025.pdf"
+        href={ProfileObject.resume} 
         target="_blank"
         rel="noopener noreferrer"
         className="pos-rel"
