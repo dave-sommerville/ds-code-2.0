@@ -28,7 +28,7 @@ function Footer() {
         <div className="footer-column">
           <h4 className="no-select">Extras</h4>
           <ul>
-            <li><a href="">theForks.io</a></li>
+            <li><a href="https://github.com/dave-sommerville/theForks.io" target="_blank" rel="noopener noreferrer">theForks.io</a></li>
             <li><Link to="/playground">Arcade</Link></li>
             <li><Link to="">Archive</Link></li>
             <li><Link to="/something-else">Something else</Link></li>
