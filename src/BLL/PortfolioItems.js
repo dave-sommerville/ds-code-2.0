@@ -67,8 +67,8 @@ const blackjack = new Portfolio(
   "Blackjack", 
   "Blackjack, featuring deal animations and a persistant player bank.", 
   "https://dave-sommerville.github.io/blackjack/",
-  ["Featured", "Game", "Large-scale"],
-  []
+  ["Featured", "Game" ],
+  ["Playtester: Sam Ruetcky"]
 );
 
 const scriptScavengers = new Portfolio(

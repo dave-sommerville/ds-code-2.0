@@ -180,6 +180,24 @@ h4 {
   font-size: var(--font-size-subtitle);
   margin: 0;
 }
+.new {
+  position: relative;
+}
+.new::after {
+  content: 'NEW!';
+  position: absolute;
+  bottom: -30px;
+  right: -35px;
+  display: flex;
+  width: 70px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-primary);
+  color: var(--clr-drk);
+  border-radius: 50%;
+}
+
 /*------------------------------------------------------------->
   Splash Component
 <-------------------------------------------------------------*/
@@ -250,7 +268,8 @@ h4 {
 }
 .info-btn.expanded {
   flex: 1;
-  height: 100svh;
+  height: 80svh;
+  overflow-y: scroll;
 }
 .info-expander-inline {
   padding: var(--app-spacing);
@@ -330,7 +349,6 @@ h4 {
     flex: none; 
   }
   .info-btn.expanded {
-    height: 630px;
     padding: var(--app-spacing);
   }
 

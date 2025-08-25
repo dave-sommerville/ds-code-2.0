@@ -65,8 +65,8 @@ export default function HeroBanner({ setHeroHeight }) {
       ))}
 
       <div className="btn-wrapper f-col center">
-        <Link to="/portfolio" className="btn">Portfolio</Link>
-        <Link to="/contact" className="btn secondary">Say Hi</Link>
+        <Link to="/contact" className="btn">Say Hi</Link>
+        <a href="https://github.com/dave-sommerville/theForks.io" target="_blank" rel="noopener noreferrer" className="btn secondary new">Check out theForks.io</a>
       </div>
     </header>
   );

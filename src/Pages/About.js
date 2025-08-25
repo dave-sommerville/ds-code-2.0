@@ -32,6 +32,14 @@ function About() {
           hexOption={""}
           />
           <p className="about-contact">
+            <a 
+              href="https://dev.to/davesommerville/the-millennials-bug-healing-through-html-2bod" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="mb-25"
+            >
+              Learn more about me or
+            </a>
             <Link to="/contact" >Tell me what you think of my work</Link>
           </p>
       </section>

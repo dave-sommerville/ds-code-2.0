@@ -126,6 +126,8 @@
   About Page (with article.css)
 <------------------------------------------------------------*/
 .about-contact {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   cursor: pointer;
   color: var(--clr-light-blue);

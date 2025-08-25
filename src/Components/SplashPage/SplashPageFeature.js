@@ -82,7 +82,7 @@ function SplashPageFeature() {
               <li><img src={gurpreetReview} alt="Review 1" /></li>
               <li><img src={creefordReview} alt="Review 2" /></li>
               <li><img src={andreReview} alt="Review 3" /></li>
-              <li><img src={samReview} alt="Review 4" /></li>
+              <li className="mb-25"><img src={samReview} alt="Review 4" /></li>
             </ul>
             <a href={linkedInProfile} target="_blank" rel="noopener noreferrer" className="raised-link">
               View my full LinkedIn here
@@ -95,7 +95,7 @@ function SplashPageFeature() {
             isActive={activeSection === 'Experience'}
             onClick={() => handleExpand('Experience')}
           >
-            <ul>
+            <ul className="mb-25">
               <li>
                 Although a recent graduate, I've expanded my experience including:
               </li>
@@ -107,7 +107,7 @@ function SplashPageFeature() {
                 development, and end-to-end workflow experience.
               </li>
             </ul>
-            <div className="flex col">
+            <div className="flex col mb-25">
               <ul className="xp-list">
                 <li className="xp-title">Dev Skills</li>
                 <li>HTML/CSS</li>
@@ -136,7 +136,7 @@ function SplashPageFeature() {
                 <li>Personable</li>
               </ul>
             </div>
-            <ul>
+            <ul className="mb-25">
               <li>Experience by Field:</li>
               <li>6 years Management</li>
               <li>8 years Sales/Hospitality</li>
