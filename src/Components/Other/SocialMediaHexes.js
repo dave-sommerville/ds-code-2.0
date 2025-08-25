@@ -1,17 +1,17 @@
 import React from 'react';
-import { FaMastodon, FaLinkedin, FaGithub, FaYoutube } from 'react-icons/fa6';
+import { FaLinkedin, FaGithub, FaDev } from 'react-icons/fa6';
 import '../../css/common/hex-style.css';
 
 function SocialMediaHexes() {
   return (
     <div className="hex-links">
       <a
-        href=""
+        href="https://dev.to/davesommerville"
         target="_blank"
         rel="noopener noreferrer"
       >
         <div className="hex">
-          <FaYoutube className="hex-icon"/>
+          <FaDev className="hex-icon"/>
         </div>
       </a>
 
