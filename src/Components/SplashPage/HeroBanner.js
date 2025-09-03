@@ -30,7 +30,6 @@ export default function HeroBanner({ setHeroHeight }) {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
   useEffect(() => {
     const updateHeight = () => {
       if (bannerRef.current) {

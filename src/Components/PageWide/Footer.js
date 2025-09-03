@@ -30,7 +30,7 @@ function Footer() {
           <ul>
             <li><a href="https://github.com/dave-sommerville/theForks.io" target="_blank" rel="noopener noreferrer">theForks.io</a></li>
             <li><Link to="/playground">Arcade</Link></li>
-            <li><Link to="">Archive</Link></li>
+            <li><Link to="/archive">Archive</Link></li>
             <li><Link to="/something-else">Something else</Link></li>
           </ul>
         </div>

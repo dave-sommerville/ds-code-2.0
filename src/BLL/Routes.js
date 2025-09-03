@@ -12,6 +12,7 @@ import Releases from '../Pages/Releases';
 import Collaborators from '../Pages/Collaborators';
 import SomethingElse from '../Pages/SomethingElse';
 import NotFound from '../Pages/NotFound';
+import PortfolioArchive from '../Pages/PortfolioArchive';
 
 export default function AppRoutes() {
   const location = useLocation();
@@ -39,6 +40,7 @@ export default function AppRoutes() {
         <Route path="/releases" element={<PageLayout><Releases /></PageLayout>} />
         <Route path="/collaborators" element={<PageLayout><Collaborators /></PageLayout>} />
         <Route path="/something-else" element={<PageLayout><SomethingElse></SomethingElse></PageLayout>} />
+        <Route path="/archive" element={<PageLayout><PortfolioArchive></PortfolioArchive></PageLayout>}></Route>
         <Route path="*" element={<PageLayout><NotFound></NotFound></PageLayout>}></Route>
       </Routes>
     </AnimatePresence>
