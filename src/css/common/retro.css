@@ -18,7 +18,7 @@
   z-index: 1000;
   background-color: var(--retro-clr-bg);
   color: #012;
-  font-size: 1.6rem;
+  font-size: var(--font-size-reg);
   font-family: monospace;
   box-shadow: -8px 8px 0 var(--clr-drk),
     -9px 9px 2px #9c9ca785;
