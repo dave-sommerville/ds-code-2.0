@@ -6,6 +6,7 @@ import scriptIcon from '../../media/img/icons/desert.png';
 import codeIcon from '../../media/img/icons/terminal.png';
 import boogleIcon from '../../media/img/icons/boggle.png';
 import hangmanIcon from '../../media/img/icons/hangman.png';
+import whackaMoleIcon from '../../media/img/icons/mallet.png';
 import releaseIcon from '../../media/img/icons/releases.png';
 import pollIcon from '../../media/img/icons/pop-up.png';
 import { Link } from 'react-router-dom';
@@ -24,29 +25,35 @@ function GameConsole() {
   return (
     <div className="game-console">
       <div className="icon-wrapper">
-        <a href="https://dave-sommerville.github.io/blackjack/" target="_blank" className="game-icon">
+        <a href="https://dave-sommerville.github.io/blackjack/" target="_blank" rel="noopener noreferrer"  className="game-icon">
           <figure>
             <img src={blackjackIcon} alt="Blackjack" />
           </figure>
           <figcaption>Blackjack</figcaption>
         </a>
-        <a href="https://dave-sommerville.github.io/script-scavengers/" target="_blank" className="game-icon">
+        <a href="https://dave-sommerville.github.io/script-scavengers/" target="_blank" rel="noopener noreferrer"  className="game-icon">
           <figure>
             <img src={scriptIcon} alt="Script Scavengers" />
           </figure>
           <figcaption>Script Scavengers</figcaption>
         </a>
-        <a href="https://dave-sommerville.github.io/code-breaker/" target="_blank" className="game-icon">
+        <a href="https://dave-sommerville.github.io/code-breaker/" target="_blank" rel="noopener noreferrer" className="game-icon">
           <figure>
             <img src={codeIcon} alt="Code Breaker" />
           </figure>
           <figcaption>Code Breaker</figcaption>
         </a>
-        <a href="https://dave-sommerville.github.io/boogle/" target="_blank" className="game-icon">
+        <a href="https://dave-sommerville.github.io/boogle/" target="_blank" rel="noopener noreferrer" className="game-icon">
           <figure>
             <img src={boogleIcon} alt="Boogle" />
           </figure>
           <figcaption>Boogle</figcaption>
+        </a>
+        <a href="https://dave-sommerville.github.io/whack-a-hole/" target="_blank" rel="noopener noreferrer"  className="game-icon new">
+          <figure>
+            <img src={whackaMoleIcon} alt="Boogle" />
+          </figure>
+          <figcaption>Whack a Mole</figcaption>
         </a>
         <div className="game-icon" onClick={() => setShowHangman(true)}>
           <figure>

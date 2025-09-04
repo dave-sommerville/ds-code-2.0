@@ -16,6 +16,23 @@
 /*----------------------------------------------------------->
   Play Area
 <------------------------------------------------------------*/
+.new {
+  position: relative;
+}
+.new::after {
+  content: 'NEW!';
+  position: absolute;
+  top: -30px;
+  right: -35px;
+  display: flex;
+  width: 60px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-primary);
+  color: var(--clr-drk);
+  border-radius: 50%;
+}
 .playground {
   height: 100svh;
   display: flex;
@@ -38,7 +55,7 @@
 }
 
 .icon-wrapper {
-  max-width: 300px;
+  max-width: 400px;
   display: flex;
   flex-wrap: wrap;
   color: var(--clr-bg);
