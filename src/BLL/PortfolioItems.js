@@ -202,7 +202,23 @@ const dungeonCrawler = new Portfolio(
   "Dungeons of Draegmor", 
   "A text based console sandbox RPG dungeon crawler", 
   "https://github.com/dave-sommerville/pixie-potion-brewery",
-  ["Console app", "Game", "Featured"],
+  ["Console app", "Game"],
+  []
+);
+const theForks = new Portfolio(
+  "https://dave-sommerville.github.io/ds-code-releases/img/theforks-preview.jpg",
+  "theForks.io",
+  "Community Developer's GitHub Repo",
+  "https://theforks.io",
+  ["Featured", "Freelance"],
+  []
+);
+const atlasGoods = new Portfolio(
+  "https://dave-sommerville.github.io/ds-code-releases/img/atlas-goods-preview.jpg",
+  "Atlas Good",
+  "Full experience simulated ecommercve site",
+  "https://dave-sommerville.github.io/ecommerce-2025/",
+  ["Featured", "Ecommerce and Organization"],
   []
 );
 
@@ -222,6 +238,8 @@ export const portfolioArray = [
   caseCollector,
   havocAndHaven,
   potionPortal,
-  dungeonCrawler
+  dungeonCrawler,
+  atlasGoods,
+  theForks
 ].map(item => item.toPlainObject());
 

@@ -47,4 +47,6 @@ Welcome to my personal portfolio. This has been one of my favourite projects so 
 - [Script Scavengers](https://www.flaticon.com/free-icons/desert)  
 - [Hangman](https://www.flaticon.com/free-icons/hangman)
 - [Boogle](https://www.flaticon.com/free-icons/boggle)  
-- [Whack a Mole](https://www.flaticon.com/free-icons/mallet)>
+- [Whack a Mole](https://www.flaticon.com/free-icons/mallet)
+- [Lab Chart](https://www.flaticon.com/free-icons/chemistry)
+- [Computer Bug](https://www.flaticon.com/free-icons/virus)
