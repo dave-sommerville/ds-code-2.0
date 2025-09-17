@@ -38,9 +38,9 @@ function About() {
               rel="noopener noreferrer"
               className="mb-25"
             >
-              Learn more about me or
+              Read my coder Origin Story
             </a>
-            <Link to="/contact" >Tell me what you think of my work</Link>
+            <Link to="/contact" >Say hi</Link>
           </p>
       </section>
     </motion.div>

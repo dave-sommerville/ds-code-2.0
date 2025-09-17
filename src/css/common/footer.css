@@ -38,7 +38,7 @@ footer {
 }
 
 .social-icons {
-  display:flex;
+  padding-top: 8px;
 }
 
 .social-icons a {
